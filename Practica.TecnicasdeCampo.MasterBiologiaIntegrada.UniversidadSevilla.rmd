@@ -26,6 +26,9 @@ library(brranching)
 
 ```{r}
 
+?phylomatic
+###FIRST SOME EXAMPLE OF HOW TO GET A PHYLOGENY USING A PHYLOMATIC APPROACH
+
 ## Not run:
 # Input taxonomic names
 taxa <- c("Poa annua", "Phlox diffusa", "Helianthus annuus")
@@ -98,12 +101,22 @@ color.plot.phylo(mytree, mydata, "SNNB_frec_prom", "Especie_epiteto", leg.cex = 
 color.plot.phylo(mytree, mydata, "SNSA_frec_prom", "Especie_epiteto", leg.cex = 0.6, main = "Sierra Nevada Sur Alto") 
 color.plot.phylo(mytree, mydata, "SNSB_frec_prom", "Especie_epiteto", leg.cex = 0.6, main = "Sierra Nevada Sur Bajo") 
 
+
+?pd
+#Explore the function and run the examples
+
 mypd <- pd(t(mydata[,-c(1,2)]), mytree, include.root=TRUE)
 mypd
+
+?mpd
+#Explore the function and run the examples
 
 mympd <- mpd(t(mydata[,-c(1,2)]), cophenetic(mytree), abundance.weighted=T)
 mympd
 myresults1 <- cbind(mypd, mympd)
+
+?mntd
+#Explore the function and run the examples
 
 mymntd <- mntd(t(mydata[,-c(1,2)]), cophenetic(mytree), abundance.weighted=T)
 mymntd
