@@ -22,7 +22,20 @@ library(brranching)
 
 ```
 
-2. Create you tre and plot
+
+3. Frequency matrix.
+
+```{r}
+mydata <- read.csv("Transectos.csv", sep = ",")
+mydata
+mydata <- mydata[1:48,]
+mydata
+
+```
+
+
+
+3. Create your tree and plot
 
 ```{r}
 
@@ -73,89 +86,111 @@ phylomatic(taxa=spp, treeuri=url)
 ### .....
 
 
+taxa <- as.character(mydata[1:48,1])
+mytree <- phylomatic(taxa=taxa, get = 'POST')
+plot(mytree, no.margin=TRUE, cex = 0.8)
+
+mytree2 <- phylomatic(taxa=taxa, get = 'POST', storedtree = "zanne2014")
+plot(mytree2, no.margin=TRUE, cex = 0.8)
 
 
 ```
 
-
-3. Frequency matrix.
-
-```{r}
-mydata <- read.csv("mydata.csv", sep = ",")
-mydata
-rownames(mydata) = mydata[,1]
-setdiff(mydata[,1], mytree$tip.label)
-setdiff(mytree$tip.label,mydata[,1])
-
-```
 
 4. Calculate phylogenetic diversity statistics.
 
 ```{r}
-color.plot.phylo(mytree, mydata, "GRNA_frec_prom", "Especie_epiteto", leg.cex = 0.6, main = "Gredos Norte Alto") 
-color.plot.phylo(mytree, mydata, "GRNB_frec_prom", "Especie_epiteto", leg.cex = 0.6, main = "Gredos Norte Bajo") 
-color.plot.phylo(mytree, mydata, "GRSA_frec_prom", "Especie_epiteto", leg.cex = 0.6, main = "Gredos Sur Alto") 
-color.plot.phylo(mytree, mydata, "GRSB_frec_prom", "Especie_epiteto", leg.cex = 0.6, main = "Gredos Sur Bajo") 
-color.plot.phylo(mytree, mydata, "SNNA_frec_prom", "Especie_epiteto", leg.cex = 0.6, main = "Sierra Nevada Norte Alto") 
-color.plot.phylo(mytree, mydata, "SNNB_frec_prom", "Especie_epiteto", leg.cex = 0.6, main = "Sierra Nevada Norte Bajo") 
-color.plot.phylo(mytree, mydata, "SNSA_frec_prom", "Especie_epiteto", leg.cex = 0.6, main = "Sierra Nevada Sur Alto") 
-color.plot.phylo(mytree, mydata, "SNSB_frec_prom", "Especie_epiteto", leg.cex = 0.6, main = "Sierra Nevada Sur Bajo") 
+mydata[,1] <- tolower(mydata[,1])
+mydata[,1] <- chartr(" ", "_", mydata[,1])
+setdiff(mydata[,1], mytree$tip.label)
+setdiff(mytree$tip.label,mydata[,1])
+
+mytree2$tip.label <- tolower(mytree2$tip.label)
+setdiff(mydata[,1], mytree2$tip.label)
+setdiff(mytree2$tip.label,mydata[,1])
+
+class(mytree) <- "phylo"
+class(mytree2) <- "phylo"
+
+color.plot.phylo(mytree2, mydata, "Caliza_1", "Specie", leg.cex = 0.6, main = "Caliza_1") 
+color.plot.phylo(mytree2, mydata, "Caliza_2","Specie", leg.cex = 0.6, main = "Caliza_2") 
+color.plot.phylo(mytree2, mydata, "Dolomia_1", "Specie", leg.cex = 0.6, main = "Dolomia_1") 
+color.plot.phylo(mytree2, mydata, "Dolomia_2", "Specie", leg.cex = 0.6, main = "Dolomia_2") 
+color.plot.phylo(mytree2, mydata, "Brezal_1", "Specie", leg.cex = 0.6, main = "Brezal_1") 
+color.plot.phylo(mytree2, mydata, "Brezal_2", "Specie", leg.cex = 0.6, main = "Brezal_2") 
+color.plot.phylo(mytree2, mydata, "Brezal_3", "Specie", leg.cex = 0.6, main = "Brezal_3") 
+color.plot.phylo(mytree2, mydata, "Brezal_4", "Specie", leg.cex = 0.6, main = "Brezal_4") 
+color.plot.phylo(mytree2, mydata, "Alcornocal_1", "Specie", leg.cex = 0.6, main = "Alcornocal_1") 
+color.plot.phylo(mytree2, mydata, "Alcornocal_2", "Specie", leg.cex = 0.6, main = "Alcornocal_2") 
+color.plot.phylo(mytree2, mydata, "Alcornocal_3", "Specie", leg.cex = 0.6, main = "Alcornocal_3") 
+color.plot.phylo(mytree2, mydata, "Quejigal_1", "Specie", leg.cex = 0.6, main = "Quejigal_1") 
+color.plot.phylo(mytree2, mydata, "Quejigal_2", "Specie", leg.cex = 0.6, main = "Quejigal_2") 
+color.plot.phylo(mytree2, mydata, "Quejigal_3", "Specie", leg.cex = 0.6, main = "Quejigal_3") 
 
 
 ?pd
 #Explore the function and run the examples
 
-mypd <- pd(t(mydata[,-c(1,2)]), mytree, include.root=TRUE)
+rownames(mydata) = mydata[,1]
+
+mypd <- pd(t(mydata[,-c(1)]), mytree2, include.root=TRUE)
 mypd
 
 ?mpd
 #Explore the function and run the examples
 
-mympd <- mpd(t(mydata[,-c(1,2)]), cophenetic(mytree), abundance.weighted=T)
+mympd <- mpd(t(mydata[,-c(1)]), cophenetic(mytree2), abundance.weighted=T)
 mympd
 myresults1 <- cbind(mypd, mympd)
 
 ?mntd
 #Explore the function and run the examples
 
-mymntd <- mntd(t(mydata[,-c(1,2)]), cophenetic(mytree), abundance.weighted=T)
+mymntd <- mntd(t(mydata[,-c(1)]), cophenetic(mytree2), abundance.weighted=T)
 mymntd
 myresults2 <- cbind(myresults1, mymntd)
 colnames(myresults2) <- c("PD", "SR", "MPD", "MNTD")
+myresults2
 write.table(myresults2, file = "diversity_index_results.txt")
 
-mycomdist <- comdist(t(mydata[,-c(1,2)]), cophenetic(mytree), abundance.weighted=T)
+mycomdist <- comdist(t(mydata[,-c(1)]), cophenetic(mytree2), abundance.weighted=T)
 library(cluster)
 mycomdist.clusters <- hclust(mycomdist)
 plot(mycomdist.clusters, main = "Dendrogram based on beta MPD")
 
-mycomdistnt1 <- comdistnt(t(mydata[,-c(1,2)]), cophenetic(mytree), abundance.weighted=F, exclude.conspecifics = T)
+mycomdistnt1 <- comdistnt(t(mydata[,-c(1,2)]), cophenetic(mytree2), abundance.weighted=F, exclude.conspecifics = T)
 mycomdistnt1.clusters <- hclust(mycomdistnt1)
 plot(mycomdistnt1.clusters, main = "Dendrogram based on beta MNTD excluding conspecifics")
 
-mycomdistnt2 <- comdistnt(t(mydata[,-c(1,2)]), cophenetic(mytree), abundance.weighted=F, exclude.conspecifics = F)
+mycomdistnt2 <- comdistnt(t(mydata[,-c(1,2)]), cophenetic(mytree2), abundance.weighted=F, exclude.conspecifics = F)
 mycomdistnt2.clusters <- hclust(mycomdistnt2)
 plot(mycomdistnt2.clusters, main = "Dendrogram based on beta MNTD including conspecifics")
 
-my.ses.pd <- ses.pd(t(mydata[,-c(1,2)]), mytree, null.model = "taxa.labels",
+
+```
+
+
+5. Finally we are going to check for phylogenetic clustering and overdispersion
+```{r}
+my.ses.pd <- ses.pd(t(mydata[,-c(1)]), mytree2, null.model = "taxa.labels",
 runs = 999)
 my.ses.pd
 write.table(my.ses.pd, file="ses.pd.result.txt")
 
-my.ses.mpd <- ses.mpd(t(mydata[,-c(1,2)]), cophenetic(mytree), null.model = "taxa.labels",
+my.ses.mpd <- ses.mpd(t(mydata[,-c(1)]), cophenetic(mytree2), null.model = "taxa.labels",
 abundance.weighted = T, runs = 999)
 my.ses.mpd
 write.table(my.ses.mpd, file="ses.mpd.result.txt")
 
 
-my.ses.mntd <- ses.mntd(t(mydata[,-c(1,2)]), cophenetic(mytree), null.model = "taxa.labels",
+my.ses.mntd <- ses.mntd(t(mydata[,-c(1)]), cophenetic(mytree2), null.model = "taxa.labels",
 abundance.weighted = T, runs = 999)
 my.ses.mntd
 write.table(my.ses.mntd, file="ses.mntd.result.txt")
 
 
 
-comm.phylo.cor.r <- comm.phylo.cor(t(mydata[,-c(1,2)]), mytree, metric="cij",null.model="sample.taxa.labels")
+comm.phylo.cor.r <- comm.phylo.cor(t(mydata[,-c(1)]), mytree2, metric="cij",null.model="sample.taxa.labels")
 comm.phylo.cor.r
 par(mai=c(1.02,0.82,0.82,0.42))
 hist(comm.phylo.cor.r$random.corrs)
