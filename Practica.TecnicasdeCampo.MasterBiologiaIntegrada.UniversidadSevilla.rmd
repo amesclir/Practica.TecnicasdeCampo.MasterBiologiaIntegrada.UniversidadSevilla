@@ -3,6 +3,8 @@ title: "Practica.TecnicasdeCampo.MasterBiologiaIntegrada.UniversidadSevilla"
 author: "Marcial"
 date: "05/21/2018"
 output: html_document
+editor_options: 
+  chunk_output_type: console
 ---
 1. Install and load packages
 
@@ -19,6 +21,9 @@ library(picante)
 
 #install.packages("brranching")
 library(brranching)
+
+#devtools::install_github("jinyizju/V.PhyloMaker")
+library(V.PhyloMaker)
 
 ```
 
@@ -92,6 +97,18 @@ plot(mytree, no.margin=TRUE, cex = 0.8)
 
 mytree2 <- phylomatic(taxa=taxa, get = 'POST', storedtree = "zanne2014")
 plot(mytree2, no.margin=TRUE, cex = 0.8)
+
+
+#################
+#This is a new method recently published
+genera<-sapply(strsplit(as.character(mydata[1:48,1])," "),function(x) x[1])
+family <- c("Fabaceae", "Fabaceae", "Ericaceae", "Lamiaceae", "Asparagaceae", "Lamiaceae", "Fabaceae", "Ericaceae", "Cistaceae", "Cistaceae", "Cistaceae", "Rosaceae", "Fabaceae", "Thymeleaceae", "Dioscoreaceae", "Boraginaceae", "Ericaceae", "Ericaceae", "Ericaceae", "Fabaceae", "Boraginaceae", "Asteraceae", "Lamiaceae", "Lamiaceae", "Myrtaceae", "Oleaceae", "Oleaceae", "Lamiaceae", "Asteraceae", "Anacardiaceae", "Rubiaceae", "Fagaceae", "Fagaceae", "Fagaceae", "Fagaceae", "Rhamnaceae", "Fabaceae", "Rhamnaceae", "Rosaceae", "Asparagaceae", "Scrophulariaceae", "Crassulaceae", "Asparagaceae", "Fabaceae", "Lamiaceae", "Lamiaceae", "Fabaceae", "Apocynaceae")
+data <- data.frame(species = mydata[1:48,1], genus = genera, family = mydata[,1])
+my.phylo.maker <- phylo.maker(data, tree = GBOTB.extended, nodes = nodes.info.1, output.sp.list = TRUE, output.tree = FALSE, scenarios = c("S1","S2","S3"), r = 1)
+
+plot(my.phylo.maker$scenario.3, cex = 0.6)
+
+write.tree(my.phylo.maker$scenario.3, file = "mytree.tree")
 
 
 ```
