@@ -218,8 +218,95 @@ Arenas1.evol.distinct <- evol.distinct(mytree.Arenas1, type = c("equal.splits", 
 mean(Arenas1.evol.distinct[,2])
 
 
-my.evol.distinct.Arenas1 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Arenas_1 != 0],]
-mean(my.evol.distinct.Arenas1[,2])
+my.evol.distinct.Arenas_1 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Arenas_1 != 0],]
+mean(my.evol.distinct.Arenas_1[,2])
+my.evol.distinct.Arenas_2 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Arenas_2 != 0],]
+mean(my.evol.distinct.Arenas_2[,2])
+my.evol.distinct.Arenas_3 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Arenas_3 != 0],]
+mean(my.evol.distinct.Arenas_3[,2])
+my.evol.distinct.Arenas_4 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Arenas_4 != 0],]
+mean(my.evol.distinct.Arenas_4[,2])
+my.evol.distinct.Arenas_5 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Arenas_5 != 0],]
+mean(my.evol.distinct.Arenas_5[,2])
+my.evol.distinct.Arenas_6 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Arenas_6 != 0],]
+mean(my.evol.distinct.Arenas_6[,2])
+my.evol.distinct.Arenas_7 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Arenas_7 != 0],]
+mean(my.evol.distinct.Arenas_7[,2])
+my.evol.distinct.Arenas_8 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Arenas_8 != 0],]
+mean(my.evol.distinct.Arenas_8[,2])
+my.evol.distinct.Arenas_9 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Arenas_9 != 0],]
+mean(my.evol.distinct.Arenas_9[,2])
+my.evol.distinct.Arenas_10 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Arenas_10 != 0],]
+mean(my.evol.distinct.Arenas_10[,2])
+my.evol.distinct.Arenas_11 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Arenas_11 != 0],]
+mean(my.evol.distinct.Arenas_11[,2])
+
+my.evol.distinct.Alcornocal_1 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Alcornocal_1 != 0],]
+mean(my.evol.distinct.Alcornocal_1[,2])
+my.evol.distinct.Alcornocal_2 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Alcornocal_2 != 0],]
+mean(my.evol.distinct.Alcornocal_2[,2])
+my.evol.distinct.Alcornocal_3 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Alcornocal_3 != 0],]
+mean(my.evol.distinct.Alcornocal_3[,2])
+my.evol.distinct.Alcornocal_4 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Alcornocal_4 != 0],]
+mean(my.evol.distinct.Alcornocal_4[,2])
+my.evol.distinct.Alcornocal_5 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Alcornocal_5 != 0],]
+mean(my.evol.distinct.Alcornocal_5[,2])
+my.evol.distinct.Alcornocal_6 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Alcornocal_6 != 0],]
+mean(my.evol.distinct.Alcornocal_6[,2])
+
+my.evol.distinct.Brezal_1 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Brezal_1 != 0],]
+mean(my.evol.distinct.Brezal_1[,2])
+my.evol.distinct.Brezal_2 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Brezal_2 != 0],]
+mean(my.evol.distinct.Brezal_2[,2])
+my.evol.distinct.Brezal_3 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Brezal_3 != 0],]
+mean(my.evol.distinct.Brezal_3[,2])
+my.evol.distinct.Brezal_4 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Brezal_4 != 0],]
+mean(my.evol.distinct.Brezal_4[,2])
+my.evol.distinct.Brezal_5 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Brezal_5 != 0],]
+mean(my.evol.distinct.Brezal_5[,2])
+my.evol.distinct.Brezal_6 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Brezal_6 != 0],]
+mean(my.evol.distinct.Brezal_6[,2])
+
+my.evol.distinct.Caliza_1 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Caliza_1 != 0],]
+mean(my.evol.distinct.Caliza_1[,2])
+my.evol.distinct.Caliza_2 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Caliza_2 != 0],]
+mean(my.evol.distinct.Caliza_2[,2])
+my.evol.distinct.Caliza_3 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Caliza_3 != 0],]
+mean(my.evol.distinct.Caliza_3[,2])
+my.evol.distinct.Caliza_4 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Caliza_4 != 0],]
+mean(my.evol.distinct.Caliza_4[,2])
+my.evol.distinct.Caliza_5 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Caliza_5 != 0],]
+mean(my.evol.distinct.Caliza_5[,2])
+my.evol.distinct.Caliza_6 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Caliza_6 != 0],]
+mean(my.evol.distinct.Caliza_6[,2])
+my.evol.distinct.Caliza_7 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Caliza_7 != 0],]
+mean(my.evol.distinct.Caliza_7[,2])
+my.evol.distinct.Caliza_8 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Caliza_8 != 0],]
+mean(my.evol.distinct.Caliza_8[,2])
+
+my.evol.distinct.Dolomia_1 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Dolomia_1 != 0],]
+mean(my.evol.distinct.Dolomia_1[,2])
+my.evol.distinct.Dolomia_2 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Dolomia_2 != 0],]
+mean(my.evol.distinct.Dolomia_2[,2])
+my.evol.distinct.Dolomia_3 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Dolomia_3 != 0],]
+mean(my.evol.distinct.Dolomia_3[,2])
+my.evol.distinct.Dolomia_4 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Dolomia_4 != 0],]
+mean(my.evol.distinct.Dolomia_4[,2])
+
+my.evol.distinct.Quejigal_1 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Quejigal_1 != 0],]
+mean(my.evol.distinct.Quejigal_1[,2])
+my.evol.distinct.Quejigal_2 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Quejigal_2 != 0],]
+mean(my.evol.distinct.Quejigal_2[,2])
+my.evol.distinct.Quejigal_3 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Quejigal_3 != 0],]
+mean(my.evol.distinct.Quejigal_3[,2])
+my.evol.distinct.Quejigal_4 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Quejigal_4 != 0],]
+mean(my.evol.distinct.Quejigal_4[,2])
+
+my.evol.distinct.Serpentina_1 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Serpentina_1 != 0],]
+mean(my.evol.distinct.Serpentina_1[,2])
+my.evol.distinct.Serpentina_2 <- my.evol.distinct[my.evol.distinct[,1] %in% mydata$Especie_PL[mydata$Serpentina_2 != 0],]
+mean(my.evol.distinct.Serpentina_2[,2])
+
 
 ```
 
