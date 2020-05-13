@@ -52,6 +52,7 @@ write.csv(correctednames,"correctednames.csv", row.names = FALSE)
 
 
 species <- paste(correctednames$New.Genus,correctednames$New.Species, sep = "_")
+species
 duplicated(species)
 
 mydata[,5] <- as.character(mydata[,5])
@@ -117,10 +118,12 @@ speciesnamesversions2
 
 ```{r}
 
-color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[7], "Especie_PL", leg.cex = 0.6, main = paste0(names(mydata)[7]))
-color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[8], "Especie_PL", leg.cex = 0.6, main = paste0(names(mydata)[8]))
+color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[2], "Especie_PL", leg.cex = 0.6, main = paste0(names(mydata)[2]))
+color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[13], "Especie_PL", leg.cex = 0.6, main = paste0(names(mydata)[13]))
 color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[9], "Especie_PL", leg.cex = 0.6, main = paste0(names(mydata)[9]))
 color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[10], "Especie_PL", leg.cex = 0.6, main = paste0(names(mydata)[10]))
+color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[20], "Especie_PL", leg.cex = 0.6, main = paste0(names(mydata)[20]))
+
 #ETC. ETC. ETC.
 
 mytree <- my.phylo.maker$scenario.2$run.1
