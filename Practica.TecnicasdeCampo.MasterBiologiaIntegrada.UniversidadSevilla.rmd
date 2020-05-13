@@ -118,8 +118,8 @@ speciesnamesversions2
 
 ```{r}
 
-color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[2], "Especie_PL", leg.cex = 0.6, main = paste0(names(mydata)[2]))
-color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[13], "Especie_PL", leg.cex = 0.6, main = paste0(names(mydata)[13]))
+color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[34], "Especie_PL", leg.cex = 0.6, main = paste0(names(mydata)[34]))
+color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[12], "Especie_PL", leg.cex = 0.6, main = paste0(names(mydata)[12]))
 color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[9], "Especie_PL", leg.cex = 0.6, main = paste0(names(mydata)[9]))
 color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[10], "Especie_PL", leg.cex = 0.6, main = paste0(names(mydata)[10]))
 color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[20], "Especie_PL", leg.cex = 0.6, main = paste0(names(mydata)[20]))
@@ -158,16 +158,25 @@ write.table(myresults2, file = "diversity_index_results.txt")
 mycomdist <- comdist(t(mydata[,-c(1)]), cophenetic(mytree), abundance.weighted=T)
 library(cluster)
 mycomdist.clusters <- hclust(mycomdist)
+pdffn = paste0("mpd", ".phylogeneticbetadiversity.pdf")
+pdf(file=pdffn, width=6, height=6)
 plot(mycomdist.clusters, main = "Dendrogram based on beta MPD")
+dev.off()
+
 
 mycomdistnt1 <- comdistnt(t(mydata[,-c(1)]), cophenetic(mytree), abundance.weighted=F, exclude.conspecifics = T)
 mycomdistnt1.clusters <- hclust(mycomdistnt1)
+pdffn = paste0("mntd_excluding", ".phylogeneticbetadiversity.pdf")
+pdf(file=pdffn, width=6, height=6)
 plot(mycomdistnt1.clusters, main = "Dendrogram based on beta MNTD excluding conspecifics")
+dev.off()
 
 mycomdistnt2 <- comdistnt(t(mydata[,-c(1)]), cophenetic(mytree), abundance.weighted=F, exclude.conspecifics = F)
 mycomdistnt2.clusters <- hclust(mycomdistnt2)
+pdffn = paste0("mntd_including", ".phylogeneticbetadiversity.pdf")
+pdf(file=pdffn, width=6, height=6)
 plot(mycomdistnt2.clusters, main = "Dendrogram based on beta MNTD including conspecifics")
-
+dev.off()
 
 ```
 
@@ -192,11 +201,16 @@ write.table(my.ses.mntd, file="ses.mntd.result.txt")
 
 
 
+?comm.phylo.cor
+
 comm.phylo.cor.r <- comm.phylo.cor(t(mydata[,-c(1)]), mytree, metric="cij",null.model="sample.taxa.labels")
 comm.phylo.cor.r
 par(mai=c(1.02,0.82,0.82,0.42))
+pdffn = paste0("comm.phylo.cor", ".phylogeneticbetadiversity.pdf")
+pdf(file=pdffn, width=6, height=6)
 hist(comm.phylo.cor.r$random.corrs)
 abline(v=comm.phylo.cor.r$obs.corr)
+dev.off()
 
 ```
 
@@ -206,7 +220,7 @@ abline(v=comm.phylo.cor.r$obs.corr)
 
 ?evol.distinct
 
-my.evol.distinct <- evol.distinct(mytree, type = c("equal.splits", "fair.proportion"), scale = FALSE, use.branch.lengths = TRUE)
+my.evol.distinct <- evol.distinct(mytree, type = "fair.proportion", scale = FALSE, use.branch.lengths = TRUE)
 
 my.evol.distinct
 mean(my.evol.distinct[,2])
@@ -215,9 +229,7 @@ mydata$Especie_PL[mydata$Arenas_1 != 0]
 speciestoprune <- setdiff(mytree$tip.label,mydata$Especie_PL[mydata$Arenas_1 != 0])
 speciestoprune
 mytree.Arenas1 <- drop.tip(mytree, speciestoprune)
-
-Arenas1.evol.distinct <- evol.distinct(mytree.Arenas1, type = c("equal.splits", "fair.proportion"), scale = FALSE, use.branch.lengths = TRUE)
-
+Arenas1.evol.distinct <- evol.distinct(mytree.Arenas1, type = "fair.proportion", scale = FALSE, use.branch.lengths = TRUE)
 mean(Arenas1.evol.distinct[,2])
 
 
