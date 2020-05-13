@@ -99,7 +99,7 @@ Scrophulariaceae,Scrophularia canina subsp. canina,Scrophulariaceae,Scrophularia
 Crassulaceae,Sedum sediforme,Crassulaceae,Sedum,Sedum_sediforme,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.006,0,0,0,0.016,0,0,0,0,0,0,0.014,0,0,0,0,0,0,0,0,0
 Smilacaceae,Smilax aspera,Smilacaceae,Smilax,Smilax_aspera,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0085,0,0,0,0,0,0,0,0,0,0,0,0.025,0,0,0,0,0,0,0,0.026,0.104,0.022,0.066,0,0
 Compositae,Staehelina dubia ,Compositae,Staehelina,Staehelina_dubia,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.014,0,0,0,0,0,0,0,0,0,0
-Leguminosae,Stauracanthus boivinii,Leguminosae,Ulex,Ulex_bovinii,SI,0,0,0,0,0,0,0,0,0,0,0,0,0,0.014,0.424,0.262,0.03,0.3435,0.19,0.584,0.7514,0.582,0.376,0.019,0.1896,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.005,0,0
+Leguminosae,Stauracanthus boivinii,Leguminosae,Ulex,Ulex_boivinii,SI,0,0,0,0,0,0,0,0,0,0,0,0,0,0.014,0.424,0.262,0.03,0.3435,0.19,0.584,0.7514,0.582,0.376,0.019,0.1896,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.005,0,0
 Leguminosae,Stauracanthus genistoides,Leguminosae,Stauracanthus,Stauracanthus_genistoides,SI,0.205,0.085,0.276,0.187,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Dioscoreaceae,Tamus communis,Dioscoreaceae,Tamus,Tamus_communis,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.144,0,0.002,0,0,0
 Labiatae,Teucrium fruticans,Lamiaceae,Teucrium,Teucrium_fruticans,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.005,0,0,0,0,0,0,0,0,0,0,0,0,0
