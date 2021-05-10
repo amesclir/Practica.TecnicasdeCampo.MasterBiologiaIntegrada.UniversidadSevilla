@@ -1,119 +1,77 @@
-Familia,Especie,Familia_PL,Genero_PL,Especie_PL,Endemismo,Arenas_1,Arenas_2,Arenas_3,Arenas_4,Arenas_5,Arenas_6,Arenas_7,Arenas_8,Arenas_9,Arenas_10,Arenas_11,Arenas_12,Arenas_13,Alcornocal_1,Alcornocal_2,Alcornocal_3,Alcornocal_4,Alcornocal_5,Alcornocal_6,Brezal_1,Brezal_2,Brezal_3,Brezal_4,Brezal_5,Brezal_6,Caliza_1,Caliza_2,Caliza_3,Caliza_4,Caliza_5,Caliza_6,Caliza_7,Caliza_8,Dolomia_1,Dolomia_2,Dolomia_3,Dolomia_4,Quejigal_1,Quejigal_2,Quejigal_3,Quejigal_4,Serpentina_1,Serpentina_2
-Leguminosae,Adenocarpus telonensis,Leguminosae,Adenocarpus,Adenocarpus_grandiflorus,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.026,0,0,0,0,0,0,0,0.009,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cruciferae,Alyssum serpyllifolium ,Brassicaceae,Alyssum,Alyssum_serpyllifolium,SI,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.01,0.018
-Poaceae,Ammophila arenaria,Poaceae,Ammophila,Ammophila_arenaria,NO,0,0,0,0.399,0.28,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Leguminosae,Anagyris foetida,Leguminosae,Anagyris,Anagyris_foetida,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.016,0.022,0.2395,0.2398,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Compositae,Andryala ragusina ,Compositae,Andryala,Andryala_ragusina,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.024,0,0,0,0,0,0
-Asparagaceae,Aphyllanthes monspeliensis,Asparagaceae,Aphyllanthes,Aphyllanthes_monspeliensis,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.006,0,0,0,0,0,0,0,0,0,0,0,0,0
-Ericaceae,Arbutus unedo,Ericaceae,Arbutus,Arbutus_unedo,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.007,0,0,0,0,0,0.0835,0,0,0,0,0,0,0,0,0,0,0,0,0.396,0,0.616,0.095,0,0
-Labiatae,Argantoniella salzmannii,Lamiaceae,Satureja,Satureja_salzmannii,SI,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.06,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Plumbaginaceae,Armeria pungens,Plumbaginaceae,Armeria,Armeria_pungens,NO,0,0,0,0.02,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Asparagaceae,Asparagus albus,Asparagaceae,Asparagus,Asparagus_albus,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.038,0,0.2005,0,0.115,0,0,0,0,0,0,0,0,0,0,0,0
-Rubiaceae,Asperula hirsuta ,Rubiaceae,Asperula,Asperula_hirsuta,SI,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.079,0.253,0,0.303,0.106,0,0,0,0,0.002,0,0,0,0,0,0
-Labiatae,Ballota hirsuta,Lamiaceae,Ballota,Ballota_hirsuta,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.079,0.2535,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Poaceae,Brachypodium retusum,Poaceae,Brachypodium,Brachypodium_retusum,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.251,0.0205,0,0.3585,0.03,0,0,0,0,0,0,0,0,0,0.38,0.106
-Labiatae,Calamintha nepeta subsp. nepeta,Lamiaceae,Calamintha,Calamintha_nepeta,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.006,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Leguminosae,Calicotome villosa,Leguminosae,Calicotome,Calicotome_villosa,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.8,0.0125,0,0.42,0.416,0,0,0.0085,0,0,0,0.069,0.072,0,0,0,0.016,0,0.029,0,0
-Ericaceae,Calluna vulgaris,Ericaceae,Calluna,Calluna_vulgaris,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.04,0,0,0.035,0.034,0,0.092,0.04,0.01,0.007,0.034,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Caryophyllaceae,Cerastium gibraltaricum,Caryophyllaceae,Cerastium,Cerastium_gibraltaricum,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0205,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Palmae,Chamaerops humilis,Palmae,Chamaerops,Chamaerops_humilis,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0135,0.207,0,0,0,0,0,0,0,0,0,0,0,0
-Cistaceae,Cistus albidus,Cistaceae,Cistus,Cistus_albidus,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.016,0,0.362,0.15,0.351,0.262,0.036,0.222,0,0,0,0,0.066,0.02
-Cistaceae,Cistus crispus,Cistaceae,Cistus,Cistus_crispus,NO,0,0,0,0,0,0,0,0.07,0.01,0,0,0,0,0,0,0,0,0.2565,0.1444,0.02,0.336,0.256,0,0.003,0.017,0,0,0,0,0,0,0,0.102,0,0,0,0,0,0,0,0.08,0,0
-Cistaceae,Cistus ladanifer,Cistaceae,Cistus,Cistus_ladanifer,NO,0,0,0,0,0,0.052,0,0.11,0.146,0,0.03,0,0.038,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.064,0.158
-Cistaceae,Cistus laurifolius ,Cistaceae,Cistus,Cistus_laurifolius,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.002,0,0,0,0,0,0,0,0,0,0
-Cistaceae,Cistus monspeliensis,Cistaceae,Cistus,Cistus_monspeliensis,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.009,0,0,0,0,0,0,0,0.018,0,0,0,0.054,0.008,0,0,0,0,0,0
-Cistaceae,Cistus salviifolius,Cistaceae,Cistus,Cistus_salviifolius,NO,0.0722,0.243,0,0.036,0.24,0.187,0.2,0.252,0.254,0.356,0.048,0.22,0.306,0.108,0.322,0.484,0.044,0.2775,0.3975,0.3054,0,0.14,0.33,0.2885,0.1325,0.022,0,0,0,0.248,0,0,0,0,0,0.02,0,0.06,0.136,0,0.384,0.11,0.002
-Ranunculaceae,Clematis flammula ,Ranunculaceae,Clematis,Clematis_flammula,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.008,0,0,0,0,0,0,0,0,0,0
-Ericaceae,Corema album,Ericaceae,Corema,Corema_album,NO,0.032,0.246,0.344,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Rosaceae,Crataegus monogyna,Rosaceae,Crataegus,Crataegus_monogyna,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0.034,0,0.012,0.1,0,0,0,0,0,0,0,0,0,0,0.0205,0,0,0,0.024,0.042,0,0,0,0,0,0.012,0.008,0.006,0,0
-Leguminosae,Cytisus fontanesii subsp. plumosus,Leguminosae,Cytisus,Cytisus_fontanesii_plumosus,SI,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.022,0,0,0,0,0,0,0,0,0,0,0
-Leguminosae,Cytisus grandiflorus ,Leguminosae,Cytisus,Cytisus_grandiflorus,SI,0.21,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Thymelaeaceae,Daphne gnidium,Thymelaeaceae,Daphne,Daphne_gnidium,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0.01,0.058,0.004,0.008,0.028,0,0.006,0,0,0,0.013,0.004,0.022,0.02,0,0,0.003,0,0.044,0,0,0.01,0.012,0.01,0,0,0,0,0,0
-Droseraceae,Drosophyllum lusitanicum,Droseraceae,Drosophyllum,Drosophyllum_lusitanicum,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0175,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Boraginaceae,Echium albicans,Boraginaceae,Echium,Echium_albicans,SI,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.003,0,0,0,0,0,0,0,0,0
-Boraginaceae,Echium gaditanum,Boraginaceae,Echium,Echium_gaditanum,SI,0,0,0,0,0.034,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Equisetaceae,Equisetum ramosissimum,Equisetaceae,Equisetum,Equisetum_ramosissimum,NO,0,0,0,0,0.056,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Ericaceae,Erica arborea,Ericaceae,Erica,Erica_arborea, NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.016,0,0,0,0,0,0,0,0.012,0,0,0,0,0,0,0,0,0,0,0,0,0.232,0.198,0.182,0.288,0,0
-Ericaceae,Erica australis,Ericaceae,Erica,Erica_australis,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.002,0.0745,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Ericaceae,Erica scoparia,Ericaceae,Erica,Erica_scoparia,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.104,0.33,0.468,0.009,0.6155,0.092,0,0.008,0.138,0.445,0.4575,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.008,0,0,0
-Ericaceae,Erica umbellata,Ericaceae,Erica,Erica_umbellata,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0555,0,0.01,0.134,0.006,0,0.005,0.1315,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cistaceae,Fumana ericifolia ,Cistaceae,Fumana,Fumana_ericifolia,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.064,0.002,0,0,0,0,0,0
-Cistaceae,Fumana thymifolia ,Cistaceae,Fumana,Fumana_thymifolia,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.002,0,0,0,0,0.052,0.016
-Leguminosae,Genista hirsuta subsp. hirsuta,Leguminosae,Genista,Genista_hirsuta_hirsuta,SI,0,0,0,0,0,0.011,0.046,0.142,0.036,0.078,0.048,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Leguminosae,Genista hirsuta subsp. lanuginosa,Leguminosae,Genista,Genista_hirsuta_lanuginosa,SI,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.426,0.256
-Leguminosae,Genista triacanthos,Leguminosae,Genista,Genista_triacanthos,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0.088,0.094,0.042,0.024,0,0,0.084,0.044,0.006,0.02,0.0595,0.016,0,0,0,0,0,0,0,0,0,0,0,0,0.008,0,0,0.007,0,0
-Boraginaceae,Glandora prostrata,Boraginaceae,Glandora,Glandora_prostrata,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.012,0,0,0,0,0.006,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cistaceae,Halimium atriplicifolium,Cistaceae,Halimium,Halimium_atriplicifolium,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.007,0,0,0,0,0,0,0,0,0,0,0.004,0.008,0.222
-Cistaceae,Halimium calycinum,Cistaceae,Halimium,Halimium_calycinum,NO,0,0.176,0.05,0.04,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cistaceae,Halimium halimifolium,Cistaceae,Halimium,Halimium_halimifolium,NO,0,0.0222,0.042,0,0,0,0,0,0,0,0,0.496,0.252,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cistaceae,Halimium lasianthum,Cistaceae,Halimium,Halimium_lasianthum,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.03,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cistaceae,Helianthemum apenninum subsp. apenninum,Cistaceae,Helianthemum,Helianthemum_apenninum,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.022,0.008
-Cistaceae,Helianthemum asperum ,Cistaceae,Helianthemum,Helianthemum_asperum,SI,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.008,0.078,0,0,0,0,0,0,0,0,0,0
-Cistaceae,Helianthemum cinereum subsp. rotundifolium,Cistaceae,Helianthemum,Helianthemum_cinereum_rotundifolium,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.08,0,0,0,0,0,0
-Cistaceae,Helianthemum marifolium subsp. andalusicum,Cistaceae,Helianthemum,Helianthemum_marifolium_andalusicum,SI,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.044,0,0,0.104,0,0,0,0,0,0,0
-Compositae,Helichrysum italicum subsp. serotinum,Compositae,Helichrysum,Helichrysum_italicum_serotinum,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.002,0,0,0,0,0,0,0,0,0,0
-Compositae,Helichrysum stoechas,Compositae,Helichrysum,Helichrysum_stoechas,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.048,0.018,0,0,0,0,0,0,0,0
-Cruciferae,Iberis ciliata,Brassicaceae,Iberis,Iberis_ciliata,NO,0.077,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cupressaceae,Juniperus phoenicea,Cupressaceae,Juniperus,Juniperus_phoenicea,NO,0.036,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Compositae,Jurinea pinnata ,Compositae,Jurinea,Jurinea_pinnata,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.002,0,0,0,0,0,0
-Labiatae,Lavandula lanata ,Lamiaceae,Lavandula,Lavandula_lanata,SI,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.006,0,0,0,0,0.42,0,0,0,0,0,0
-Labiatae,Lavandula pedunculata,Lamiaceae,Lavandula,Lavandula_pedunculata,NO,0.214,0,0,0,0,0,0,0,0,0.07,0.094,0.126,0.162,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Labiatae,Lavandula stoechas,Lamiaceae,Lavandula,Lavandula_stoechas,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.076,0.034,0,0.152,0.4493,0.237,0.354,0.444,0.34,0.038,0.0555,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.008,0
-Boraginaceae,Lithodora fruticosa ,Boraginaceae,Lithodora,Lithodora_fruticosa,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.002,0.002
-Poaceae,Macrochloa tenacissima ,Poaceae,Macrochloa,Macrochloa_tenacissima,SI,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.864,0.316,0,0,0,0,0,0
-Euphorbiaceae,Mercurialis tomentosa,Euphorbiaceae,Mercurialis,Mercurialis_tomentosa,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.01,0,0,0,0,0,0
-Labiatae,Micromeria graeca,Lamiaceae,Micromeria,Micromeria_graeca,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.002,0.023,0.004,0.007,0,0,0,0,0,0,0,0,0,0,0,0,0
-Myrtaceae,Myrtus communis,Myrtaceae,Myrtus,Myrtus_communis,NO,0,0,0,0,0,0.092,0.028,0,0,0.01,0.116,0,0,0,0,0.016,0.164,0,0.014,0,0,0,0.02,0.229,0,0,0,0,0,0,0,0,0,0,0,0,0,0.038,0.034,0.02,0,0,0
-Oleaceae,Olea europaea,Oleaceae,Olea,Olea_europaea,NO,0,0,0,0,0,0.146,0.016,0,0.19,0.126,0.03,0.02,0,0,0,0,0,0,0,0,0,0.014,0,0,0,0.182,0.15,0.2761,0.095,0.079,0.057,0,0,0,0,0,0,0,0,0,0,0,0
-Leguminosae,Ononis pinnata,Leguminosae,Ononis,Ononis_pinnata,SI,0,0,0,0,0.082,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cactaceae,Opuntia tuna,Cactaceae,Opuntia,Opuntia_tuna,NO,0,0,0,0,0.007,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Compositae,Phagnalon saxatile,Compositae,Phagnalon,Phagnalon_saxatile,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.031,0,0,0,0,0,0,0,0,0,0.089,0,0
-Oleaceae,Phillyrea angustifolia,Oleaceae,Phillyrea,Phillyrea_angustifolia,NO,0,0,0,0,0,0,0,0,0,0.048,0.072,0.018,0.018,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.002,0,0,0,0,0,0,0,0,0,0
-Oleaceae,Phillyrea latifolia,Oleaceae,Phillyrea,Phillyrea_latifolia,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.08,0,0,0.002,0,0
-Labiatae,Phlomis lychnitis ,Lamiaceae,Phlomis,Phlomis_lychnitis,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.038,0.002,0,0,0,0.008,0,0,0,0,0.01,0
-Labiatae,Phlomis purpurea,Lamiaceae,Phlomis,Phlomis_purpurea,SI,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.222,0.2,0.0385,0,0,0.1541,0.052,0.002,0,0,0,0,0,0.142,0,0,0.048,0
-Pinaceae,Pinus pinaster,Pinaceae,Pinus,Pinus_pinaster,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.018,0.034
-Pinaceae,Pinus pinea,Pinaceae,Pinus,Pinus_pinea,NO,0.18,0.182,0,0.14,0,0.356,0.11,0.26,0.112,0.472,0.71,0,0.48,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Anacardiaceae,Pistacia lentiscus,Anacardiaceae,Pistacia,Pistacia_lentiscus,NO,0,0,0,0,0,0.02,0,0,0.192,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.001,0,0,0,0,0.01,0,0,0,0,0,0,0,0,0.104,0,0.15,0,0
-Polygalaceae,Polygala baetica,Polygalaceae,Polygala,Polygala_baetica,SI,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.004,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Polygalaceae,Polygala rupestris,Polygalaceae,Polygala,Polygala_rupestris,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.006,0,0,0,0,0,0
-Compositae,Ptilostemon hispanicus,Compositae,Ptilostemon,Ptilostemon_hispanicus,SI,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.014,0,0,0,0.017,0,0,0,0,0.038,0.024,0.034,0,0,0,0.23,0,0
-Rubiaceae,Putoria calabrica,Rubiaceae,Putoria,Putoria_calabrica,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.052,0,0.07,0,0,0,0,0,0
-Fagaceae,Quercus canariensis,Fagaceae,Quercus,Quercus_canariensis,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.186,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.71,0.62,0.42,0.238,0,0
-Fagaceae,Quercus coccifera,Fagaceae,Quercus,Quercus_coccifera,NO,0,0,0,0,0,0.038,0.108,0.132,0.094,0.034,0,0,0,0,0,0,0,0,0,0,0,0.002,0,0,0,0,0,0,0,0,0,0,0.01,0,0,0,0,0,0,0,0,0,0
-Fagaceae,Quercus ilex subsp. ballota,Fagaceae,Quercus,Quercus_ilex_ballota,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.005,0,0,0,0,0,0.47,0,0,0.013,0.013,0.003,0,0,0.122,0,0.026,0,0,0,0,0,0,0,0
-Fagaceae,Quercus lusitanica,Fagaceae,Quercus,Quercus_lusitanica,SI,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.184,0,0,0,0,0,0.5,0.4845,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Fagaceae,Quercus suber,Fagaceae,Quercus,Quercus_suber,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0.492,0.718,0.9,0.514,0.0021,0,0.008,0,0.05,0.3,0.005,0.06,0,0,0,0,0.0185,0,0,0,0,0,0,0,0.276,0.24,0.5,0.401,0,0
-Leguminosae,Retama sphaerocarpa,Leguminosae,Retama,Retama_sphaerocarpa,SI,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.264,0.018,0.014,0.029,0.085,0,0,0,0.142,0.062,0,0,0,0,0,0,0,0
-Rhamnaceae,Rhamnus alaternus,Rhamnaceae,Rhamnus,Rhamnus_alaternus,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.06,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Rhamnaceae,Rhamnus myrtifolia ,Rhamnaceae,Rhamnus,Rhamnus_myrtifolia,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.004,0,0,0,0,0,0
-Rhamnaceae,Rhamnus oleoides,Rhamnaceae,Rhamnus,Rhamnus_oleoides,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0075,0,0,0,0,0.04,0,0,0,0,0,0,0,0
-Rosaceae,Rosa canina ,Rosaceae,Rosa,Rosa_canina,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.004,0,0,0,0,0,0,0,0,0,0
-Rosaceae,Rosa sempervirens,Rosaceae,Rosa,Rosa_sempervirens,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.045,0,0
-Labiatae,Rosmarinus officinalis,Lamiaceae,Rosmarinus,Rosmarinus_officinalis,NO,0.171,0,0,0,0,0,0,0,0.01,0,0,0.04,0.022,0,0,0,0,0,0,0,0,0,0,0.001,0,0,0,0,0,0.0487,0,0,0,0,0,0,0,0,0,0,0.087,0,0
-Rubiaceae,Rubia peregrina,Rubiaceae,Rubia,Rubia_peregrina,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.012,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.157,0,0
-Rosaceae,Rubus ulmifolius,Rosaceae,Rubus,Rubus_ulmifolius,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0.07,0.004,0,0.014,0,0.001,0,0,0,0,0.0535,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.324,0.004,0,0,0
-Liliaceae,Ruscus aculeatus,Liliaceae,Ruscus,Ruscus_aculeatus,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.032,0,0,0,0,0
-Rutaceae,Ruta angustifolia,Rutaceae,Ruta,Ruta_angustifolia,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0025,0,0,0,0,0,0,0,0,0,0.0883,0,0,0,0,0,0,0,0,0,0,0,0,0.053,0,0
-Scrophulariaceae,Scrophularia canina subsp. canina,Scrophulariaceae,Scrophularia,Scrophularia_canina,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.117,0.024,0,0,0,0,0,0,0,0
-Crassulaceae,Sedum sediforme,Crassulaceae,Sedum,Sedum_sediforme,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.006,0,0,0,0.016,0,0,0,0,0,0,0.014,0,0,0,0,0,0,0,0,0
-Smilacaceae,Smilax aspera,Smilacaceae,Smilax,Smilax_aspera,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0085,0,0,0,0,0,0,0,0,0,0,0,0.025,0,0,0,0,0,0,0,0.026,0.104,0.022,0.066,0,0
-Compositae,Staehelina dubia ,Compositae,Staehelina,Staehelina_dubia,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.014,0,0,0,0,0,0,0,0,0,0
-Leguminosae,Stauracanthus boivinii,Leguminosae,Ulex,Ulex_boivinii,SI,0,0,0,0,0,0,0,0,0,0,0,0,0,0.014,0.424,0.262,0.03,0.3435,0.19,0.584,0.7514,0.582,0.376,0.019,0.1896,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.005,0,0
-Leguminosae,Stauracanthus genistoides,Leguminosae,Stauracanthus,Stauracanthus_genistoides,SI,0.205,0.085,0.276,0.187,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Dioscoreaceae,Tamus communis,Dioscoreaceae,Tamus,Tamus_communis,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.144,0,0.002,0,0,0
-Labiatae,Teucrium fruticans,Lamiaceae,Teucrium,Teucrium_fruticans,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.005,0,0,0,0,0,0,0,0,0,0,0,0,0
-Labiatae,Teucrium lusitanicum subsp. lusitanicum,Lamiaceae,Teucrium,Teucrium_lusitanicum_lusitanicum,SI,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.004,0,0,0,0.43,0.036,0,0,0,0,0.018,0.004
-Labiatae,Teucrium scorodonia,Lamiaceae,Teucrium,Teucrium_scorodonia,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.008,0.04,0.012,0.01,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.4,0,0.01,0,0,0
-Labiatae,Teucrium webbianum ,Lamiaceae,Teucrium,Teucrium_webbianum,SI,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,0,0,0,0,0,0
-Santalaceae,Thesium humifusum ,Santalaceae,Thesium,Thesium_humifusum,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.09,0,0,0,0,0,0,0
-Thymelaeaceae,Thymelaea villosa,Thymelaeaceae,Thymelaea,Thymelaea_villosa,SI,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.016,0,0,0,0,0,0.0013,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Labiatae,Thymus baeticus ,Lamiaceae,Thymus,Thymus_baeticus,SI,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.118,0.042
-Labiatae,Thymus granatensis subsp. granatensis,Lamiaceae,Thymus,Thymus_granatensis_granatensis,SI,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.554,0.256,0,0,0,0,0,0
-Labiatae,Thymus mastichina,Lamiaceae,Thymus,Thymus_mastichina,NO,0.007,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.034,0.052,0.0245,0.005,0,0.029,0.092,0.188,0.163,0.048,0,0.008,0,0,0,0,0,0
-Leguminosae,Ulex parviflorus subsp. parviflorus,Leguminosae,Ulex,Ulex_parviflorus_parviflorus,SI,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.26,0.034,0,0,0.264,0.232,0,0,0,0,0,0
-Leguminosae,Ulex baeticus ,Leguminosae,Ulex,Ulex_parviflorus_funkii,SI,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.482,0,0,0,0,0,0,0,0,0,0,0.0039,0.156,0.344
-Leguminosae,Ulex eriocladus,Leguminosae,Ulex,Ulex_parviflorus_eriocladus,SI,0,0,0,0,0,0,0,0,0,0,0,0.148,0.046,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Leguminosae,Ulex borgiae,Leguminosae,Ulex,Ulex_borgiae,SI,0,0,0,0,0,0,0,0,0,0,0,0,0,0.24,0,0.012,0,0,0,0.014,0.132,0,0,0,0,0,0,0,0,0,0,0,0,0.093,0.16,0,0,0,0,0,0,0,0
-Caprifoliaceae,Viburnum tinus,Caprifoliaceae,Viburnum,Viburnum_tinus,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.008,0,0
-Apocynaceae,Vinca difformis,Apocynaceae,Vinca,Vinca_difformis,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.21,0,0.0025,0.0105,0,0.03,0,0,0,0,0,0,0,0,0,0,0,0
+Species,Familia,Endemismo,Caliza_1,Caliza_2,Caliza_3,Caliza_4,Caliza_5,Caliza_6,Caliza_7,Caliza_8,Dolomía_1,Dolomía_2,Dolomía_3,Dolomía_4,Bosque_1,Bosque_2,Bosque_3,Bosque_4,Bosque_5,Bosque_6,Matorral_1,Matorral_2,Matorral_3,Matorral_4,Matorral_5,Matorral_6
+Anagyris_foetida,Leguminosae,NO,1.6,2.2,23.95,23.98,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Andryala_ragusina,Compositae,NO,0,0,0,0,0,0,0,0,0,0,0,2.4,0,0,0,0,0,0,0,0,0,0,0,0
+Anthyllis_cytisoides,Leguminosae,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0
+Aphyllanthes_monspeliensis,Asparagaceae,NO,0,0,0,0,0.6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Asparagus_horridus,Asparagaceae,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1.2,0,13,0
+Asparagus_albus,Asparagaceae,NO,0,3.8,0,20.05,0,11.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Asperula_hirsuta,Rubiaceae,SI,0,0,7.9,25.3,0,30.3,10.6,0,0,0,0,0.2,0,3.8,1.6,0,3.4,0.4,9.4,0,0,2,0.4,0
+Ballota_hirsuta,Labiatae,NO,0,0,7.9,25.35,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Brachypodium_retusum_retusum,Poaceae,NO,0,0,25.1,2.05,0,35.85,3,0,0,0,0,0,23.46,29.2,12,33.7,10.8,30.4,40.2,20.42,36.4,24.4,9.4,11
+Calicotome_villosa,Leguminosae,NO,42,41.6,0,0,0.85,0,0,0,6.9,7.2,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cerastium_gibraltaricum,Caryophyllaceae,NO,0,0,2.05,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Chamaerops_humilis,Arecaceae,NO,0,0,0,0,1.35,20.7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cistus_albidus,Cistaceae,NO,0,0,0,0,1.6,0,36.2,15,35.1,26.2,3.6,22.2,29.6,30.2,16.44,13.2,18,25.6,48.4,55.34,61.4,43.8,35.8,24.42
+Cistus_crispus,Cistaceae,NO,0,0,0,0,0,0,0,10.2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cistus_laurifolius,Cistaceae,NO,0,0,0,0,0,0,0,0.2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cistus_monspeliensis,Cistaceae,NO,0,0,0,0,0,0,1.8,0,0,0,5.4,0.8,0,1.6,0,0,0,0,0,0,0,0,0,0
+Cistus_salviifolius,Cistaceae,NO,2.2,0,0,0,24.8,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0
+Clematis_flammula,Ranunculaceae,NO,0,0,0,0,0,0,0,0.8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Crataegus_monogyna,Rosaceae,NO,0,0,2.05,0,0,0,2.4,4.2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cytisus_fontanesii_plumosus,Leguminosae,SI,0,0,0,0,0,0,2.2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Daphne_gnidium,Thymelaeaceae,NO,2.2,2,0,0,0.3,0,4.4,0,0,1,1.2,1,0,0,0,0,0,0,0,0,0,0,0,0
+Echium_albicans,Boraginaceae,SI,0,0,0,0,0,0,0,0,0.3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Fumana_ericifolia,Cistaceae,NO,0,0,0,0,0,0,0,0,0,0,6.4,0.2,0,0,0,0,0,0,0,0,0,0,0,0
+Fumana_thymifolia,Cistaceae,NO,0,0,0,0,0,0,0,0,0,0,0,0.2,0,0,0,0,0,2.4,2.6,0,0,28.2,7.2,14.64
+Genista_umbellata_equisetiformis,Leguminosae,SI,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1.8,0,13.26,8,0.4,1,0
+Halimium_atriplicifolium,Cistaceae,NO,0,0,0,0,0.7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Helianthemum_asperum,Cistaceae,SI,0,0,0,0,0,0,0.8,7.8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Helianthemum_cinereum_rotundifolium,Cistaceae,NO,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0
+Helianthemum_marifolium_andalusicum,Cistaceae,SI,0,0,0,0,0,0,0,4.4,0,0,10.4,0,0,0,0,0,0,0,0,0,0,1,0,0
+Helichrysum_italicum_serotinum,Compositae,NO,0,0,0,0,0,0,0,0.2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Helichrysum_stoechas,Compositae,NO,0,0,0,0,0,0,0,0,4.8,1.8,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Juniperus_oxycedrus_oxycedrus,Cupressaceae,NO,0,0,0,0,0,0,0,0,0,0,0,0,28.2,18.6,13.6,7.96,21,13.4,10.2,5.26,18.2,6.2,8.2,10.04
+Jurinea_pinnata,Compositae,NO,0,0,0,0,0,0,0,0,0,0,0,0.2,0,0,0,0,0,0,0,0,0,0,0,0
+Lavandula_lanata,Labiatae,SI,0,0,0,0,0,0,0.6,0,0,0,0,42,0,0,0,0,0,0,0,0,0,0,0,0
+Lonicera_periclymenum_hispanica,Caprifoliaceae,SI,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+Macrochloa_tenacissima,Poaceae,SI,0,0,0,0,0,0,0,0,0,0,86.4,31.6,0,0,0,0,0,0.6,0,0,2.2,10.6,0,60.1
+Mercurialis_tomentosa,Euphorbiaceae,NO,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+Micromeria_graeca,Labiatae,NO,0,0.2,2.3,0.4,0.7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Olea_europaea,Oleaceae,NO,18.2,15,27.61,9.5,7.9,5.7,0,0,0,0,0,0,0.42,4.6,2,0,0,0,1.2,4.48,7.6,0,0,0
+Hedysarum_boveanum_europaeum,Leguminosae,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.6,0,0,0,0,0,0
+Phagnalon_rupestre,Compositae,NO,0,0,0,0,0,0,0,0,0,0,0,0,0.44,0,0,0,0,0,0,0,0,0,0,0
+Phagnalon_saxatile,Compositae,NO,0,0,0,0,0,3.1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Phillyrea_angustifolia,Oleaceae,NO,0,0,0,0,0,0,0,0.2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Phlomis_lychnitis,Labiatae,NO,0,0,0,0,0,0,3.8,0.2,0,0,0,0.8,20.36,0.6,0,0,0,0.2,0.4,0,1.4,2,0,0.84
+Phlomis_purpurea,Labiatae,SI,22.2,20,3.85,0,0,15.41,5.2,0.2,0,0,0,0,8.26,33.6,16.6,54.12,20.6,8.8,14.2,5.48,12.2,6.6,0,0
+Pinus_halepensis,Pinaceae,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,3.8,0,0,6.4,1.4,0,0,0,0,0,0
+Pistacia_lentiscus,Anacardiaceae,NO,0,0,0,0,1,0,0,0,0,0,0,0,1.24,0,0,6.88,2.2,0,4.6,0,0,0,0,0
+Pistacia_terebinthus,Anacardiaceae,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0.2,0,0,0,0,0,0,0,0,0,0
+Polygala_rupestris,Polygalaceae,NO,0,0,0,0,0,0,0,0,0,0,0,0.6,0,0,0,0,0,0,0,0,0,0,0,0
+Ptilostemon_hispanicus,Compositae,SI,1.4,0,0,0,1.7,0,0,0,0,3.8,2.4,3.4,0,0,0,0,0,0,0,0,0,0,0,0
+Putoria_calabrica,Rubiaceae,NO,0,0,0,0,0,0,0,0,0,5.2,0,7,0,0,0,0,0,0,0,0,0,0,0,0
+Quercus_coccifera,Fagaceae,NO,0,0,0,0,0,0,0,1,0,0,0,0,4.68,2.6,50.2,65.4,13.8,5.4,39,14.22,9.6,0,0,0
+Quercus_ballota_rotundifolia,Fagaceae,NO,0,0,1.3,1.3,0.3,0,0,12.2,0,2.6,0,0,3.06,1.8,4.6,0,20.6,5.6,3.6,0,14.4,0,0,0
+Quercus_suber,Fagaceae,NO,0,0,0,0,1.85,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Retama_sphaerocarpa,Leguminosae,SI,26.4,1.8,1.4,2.9,8.5,0,0,0,14.2,6.2,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Rhamnus_alaternus,Rhamnaceae,NO,0,6,0,0,0,0,0,0,0,0,0,0,5.94,0,0,0,3.2,0,0,0,0,0,0,0
+Rhamnus_myrtifolia,Rhamnaceae,NO,0,0,0,0,0,0,0,0,0,0,0,0.4,0,0,0,0,0,0,0,0,0,0,0,0
+Rhamnus_lycioides_oleoides,Rhamnaceae,NO,0,0,0,0,0.75,0,0,0,0,4,0,0,10.92,2.8,5,2.2,4.8,2.4,6.4,2.74,0.4,0,0,2.16
+Rosa_canina,Rosaceae,NO,0,0,0,0,0,0,0,0.4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Salvia_rosmarinus,Labiatae,NO,0,0,0,0,4.87,0,0,0,0,0,0,0,22.8,0,0,0,0,10.8,11.2,2.94,0,52.8,34,46.68
+Rubia_peregrina,Rubiaceae,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9.96,6.8,0,0,0,0,0,0,0
+Rubus_ulmifolius,Rosaceae,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5.2,0,0,0,0,0,0,0
+Ruta_angustifolia,Rutaceae,NO,0,0,8.83,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Scrophularia_canina_canina,Scrophulariaceae,NO,0,0,0,0,0,0,0,0,11.7,2.4,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sedum_sediforme,Crassulaceae,NO,0,1.6,0,0,0,0,0,0,1.4,0,0,0,0,0,0,0,0,0,0,0,0,0.8,3.8,1
+Smilax_aspera,Smilacaceae,NO,0,0,0,0,2.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Staehelina_dubia,Compositae,NO,0,0,0,0,0,0,0,1.4,0,0,0,0,18.92,2.8,0.8,0.7,0,1.2,0,0,0,0,0,0
+Teucrium_capitatum_capitatum,Labiatae,NO,0,0,0,0,0,0,0,0,0,0,0,0,0,0.6,0,0,0,0.4,0,0,0,1.2,0,0.66
+Teucrium_fruticans,Labiatae,NO,0,0,0,0,0.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Teucrium_lusitanicum_lusitanicum,Labiatae,SI,0,0,0,0,0,0,0.4,0,0,0,43,3.6,0,0,0,0,0,0,0,0,0,0,0,0
+Teucrium_webbianum,Labiatae,SI,0,0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0
+Thesium_humifusum,Santalaceae,NO,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0
+Thymus_granatensis_granatensis,Labiatae,SI,0,0,0,0,0,0,0,0,0,0,55.4,25.6,0,0,0,0,0,0,0,0,0,0,0,0
+Thymus_mastichina,Labiatae,NO,3.4,5.2,2.45,0.5,0,2.9,9.2,18.8,16.3,4.8,0,0.8,5.64,1.6,0.2,4.64,0,0.6,4.2,1.9,4,1.6,1.6,0.32
+Ulex_baeticus,Leguminosae,SI,0,0,0,0,48.2,0,26,3.4,0,0,26.4,23.2,10.74,43,5.4,10.44,4.8,11.2,2.2,22.2,0.4,5.4,0,0
+Vinca_difformis,Apocynaceae,NO,21,0,0.25,1.05,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

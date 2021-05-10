@@ -42,25 +42,27 @@ mydata
 ```{r}
 
 names(mydata)
-genera<-sapply(strsplit(as.character(mydata[,5]),"_"),function(x) x[1])
-epithet<-sapply(strsplit(as.character(mydata[,5]),"_"),function(x) x[2])
-infrasp <-sapply(strsplit(as.character(mydata[,5]),"_"),function(x) x[3])
+genera<-sapply(strsplit(as.character(mydata[,1]),"_"),function(x) x[1])
+epithet<-sapply(strsplit(as.character(mydata[,1]),"_"),function(x) x[2])
+infrasp <-sapply(strsplit(as.character(mydata[,1]),"_"),function(x) x[3])
+
+infrasp
 
 library(Taxonstand)
-correctednames <- TPL(genus = genera, species = epithet, infrasp = infrasp, infra = TRUE, corr = TRUE, diffchar = 2, max.distance = 1,version = "1.1", encoding = "UTF-8", author = TRUE,drop.lower.level = FALSE, file = "", silent = TRUE, repeats = 6)
+correctednames <- TPL(genus = genera, species = epithet, infrasp = infrasp, infra = F, corr = TRUE, diffchar = 2, max.distance = 1,version = "1.1", encoding = "UTF-8", author = TRUE,drop.lower.level = FALSE, file = "", silent = TRUE, repeats = 6)
 write.csv(correctednames,"correctednames.csv", row.names = FALSE)
 
 
-species <- paste(correctednames$New.Genus,correctednames$New.Species, sep = "_")
+species <- paste(genera,epithet, sep = "_")
 species
 duplicated(species)
 
-mydata[,5] <- as.character(mydata[,5])
-mydata[,5][duplicated(species)]
-species[duplicated(species)]
-species[duplicated(species)] <- mydata[,5][duplicated(species)]
+#mydata[,5] <- as.character(mydata[,5])
+#mydata[,5][duplicated(species)]
+#species[duplicated(species)]
+#species[duplicated(species)] <- mydata[,5][duplicated(species)]
 
-duplicated(species)
+#duplicated(species)
 
 #mydata[,5][duplicated(species, fromLast = TRUE)]
 #species[duplicated(species, fromLast = TRUE)]
@@ -68,22 +70,25 @@ duplicated(species)
 
 #duplicated(species)
 
-mydata[,3] <- as.character(mydata[,3])
-mydata[,3][mydata[,3]=="Leguminosae"] <-"Fabaceae" 
-mydata[,3][mydata[,3]=="Compositae"] <-"Asteraceae"
-mydata[,3][mydata[,3]=="Palmae"] <-"Arecaceae"
-mydata[,3][mydata[,3]=="Droseraceae"] <-"Drosophyllaceae"
-mydata[,3][mydata[,3]=="Liliaceae"] <-"Asparagaceae"
-mydata[,3][mydata[,3]=="Caprifoliaceae"] <-"Adoxaceae"
+mydata[,2] <- as.character(mydata[,2])
+mydata[,2][mydata[,2]=="Leguminosae"] <-"Fabaceae" 
+mydata[,2][mydata[,2]=="Compositae"] <-"Asteraceae"
+mydata[,2][mydata[,2]=="Palmae"] <-"Arecaceae"
+mydata[,2][mydata[,2]=="Droseraceae"] <-"Drosophyllaceae"
+mydata[,2][mydata[,2]=="Liliaceae"] <-"Asparagaceae"
+mydata[,2][mydata[,2]=="Adoxaceae"] <-"Caprifoliaceae"
+mydata[,2][mydata[,2]=="Adoxaceae"] <-"Caprifoliaceae"
+mydata[,2][mydata[,2]=="Labiatae"] <-"Lamiaceae"
+
 #Rhamnus is from Rhamnaceae, no EUPHORBIACEAE
        
 
 
-data <- data.frame(species = species, genus = correctednames$New.Genus, family = mydata[,3])
+data <- data.frame(species = species, genus = genera, family = mydata[,2])
 my.phylo.maker <- phylo.maker(data, tree = GBOTB.extended, nodes = nodes.info.1, output.sp.list = TRUE, output.tree = FALSE, scenarios = c("S1","S2","S3"), r = 1)
 
 
-speciesnamesversions <- cbind(as.character(mydata[,5]), paste(correctednames$New.Genus,correctednames$New.Species, sep = "_"), species )
+speciesnamesversions <- cbind(as.character(mydata[,1]), paste(correctednames$New.Genus,correctednames$New.Species, sep = "_"), species )
 
 my.phylo.maker$scenario.3$tip.label <- speciesnamesversions[,1][match(my.phylo.maker$scenario.3$tip.label,speciesnamesversions[,3])]
 pdffn = paste0("myphylo", ".scenario3.pdf")
@@ -107,9 +112,9 @@ dev.off()
 write.tree(my.phylo.maker$scenario.1, file = "mytree1.tree")
 
 
-speciesnamesversions2 <- cbind(as.character(mydata[,1]), paste(correctednames$New.Genus,correctednames$New.Species, correctednames$New.Infraspecific, sep = "_"), species )
-speciesnamesversions2[,2] <- sub("_$", "", speciesnamesversions2[,2])
-speciesnamesversions2
+#speciesnamesversions2 <- cbind(as.character(mydata[,1]), paste(correctednames$New.Genus,correctednames$New.Species, correctednames$New.Infraspecific, sep = "_"), species )
+#speciesnamesversions2[,2] <- sub("_$", "", speciesnamesversions2[,2])
+#speciesnamesversions2
 
 ```
 
@@ -118,11 +123,11 @@ speciesnamesversions2
 
 ```{r}
 
-color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[34], "Especie_PL", leg.cex = 0.6, main = paste0(names(mydata)[34]))
-color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[12], "Especie_PL", leg.cex = 0.6, main = paste0(names(mydata)[12]))
-color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[9], "Especie_PL", leg.cex = 0.6, main = paste0(names(mydata)[9]))
-color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[10], "Especie_PL", leg.cex = 0.6, main = paste0(names(mydata)[10]))
-color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[20], "Especie_PL", leg.cex = 0.6, main = paste0(names(mydata)[20]))
+#color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[34], "Species", leg.cex = 0.6, main = paste0(names(mydata)[34]))
+#color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[12], "Species", leg.cex = 0.6, main = paste0(names(mydata)[12]))
+#color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[9], "Species", leg.cex = 0.6, main = paste0(names(mydata)[9]))
+#color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[10], "Species", leg.cex = 0.6, main = paste0(names(mydata)[10]))
+#color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[20], "Species", leg.cex = 0.6, main = paste0(names(mydata)[20]))
 
 #ETC. ETC. ETC.
 
@@ -133,6 +138,7 @@ dim(mydata)
 mydata <- mydata[1:118,5:49]
 rownames(mydata) = mydata[,1]
 dim(mydata)
+mydata <- mydata[,-2]
 mydata <- mydata[,-2]
 
 mypd <- pd(t(mydata[,-c(1)]), mytree, include.root=TRUE)
