@@ -123,11 +123,19 @@ write.tree(my.phylo.maker$scenario.1, file = "mytree1.tree")
 
 ```{r}
 
+<<<<<<< HEAD
 #color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[34], "Species", leg.cex = 0.6, main = paste0(names(mydata)[34]))
 #color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[12], "Species", leg.cex = 0.6, main = paste0(names(mydata)[12]))
 #color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[9], "Species", leg.cex = 0.6, main = paste0(names(mydata)[9]))
 #color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[10], "Species", leg.cex = 0.6, main = paste0(names(mydata)[10]))
 #color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[20], "Species", leg.cex = 0.6, main = paste0(names(mydata)[20]))
+=======
+color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[34], "Especie_PL", leg.cex = 0.6, main = paste0(names(mydata)[34]))
+color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[12], "Especie_PL", leg.cex = 0.6, main = paste0(names(mydata)[12]))
+color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[9], "Especie_PL", leg.cex = 0.6, main = paste0(names(mydata)[9]))
+color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[10], "Especie_PL", leg.cex = 0.6, main = paste0(names(mydata)[10]))
+color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[20], "Especie_PL", leg.cex = 0.6, main = paste0(names(mydata)[20]))
+>>>>>>> b663868006cdd2f6f04288ee378868ee994b3e1c
 
 #ETC. ETC. ETC.
 
