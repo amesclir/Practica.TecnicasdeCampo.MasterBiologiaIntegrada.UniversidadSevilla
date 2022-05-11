@@ -107,7 +107,11 @@ write.tree(my.phylo.maker$scenario.1, file = "mytree1.tree")
 ```{r}
 mydata$Especie <- species 
 library(picante)
+
+pdffn = paste0("plotting", ".community1.pdf")
+pdf(file=pdffn, width=6, height=6)
 color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[5], "Especie", leg.cex = 0.6, main = paste0(names(mydata)[5]))
+dev.off()
 
 #ETC. ETC. ETC.
 #Do this with all the plot
