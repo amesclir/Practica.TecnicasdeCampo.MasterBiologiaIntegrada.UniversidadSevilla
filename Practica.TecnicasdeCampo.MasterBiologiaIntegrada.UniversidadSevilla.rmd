@@ -29,92 +29,75 @@ library(V.PhyloMaker)
 3. Frequency matrix.
 
 ```{r}
-mydata <- read.csv("Transectos.csv", sep = ",")
-
+mydata <- read.delim("Transectos.txt", header = T,  check.names = F)
+mydata
+mydata <- mydata[1:44,1:18]
 mydata
 
-```
 
-
-
-3. Create your tree and plot
-
-```{r}
 
 names(mydata)
-genera<-sapply(strsplit(as.character(mydata[,1]),"_"),function(x) x[1])
-epithet<-sapply(strsplit(as.character(mydata[,1]),"_"),function(x) x[2])
-infrasp <-sapply(strsplit(as.character(mydata[,1]),"_"),function(x) x[3])
+genera<-sapply(strsplit(as.character(mydata[,3])," "),function(x) x[1])
+epithet<-sapply(strsplit(as.character(mydata[,3])," "),function(x) x[2])
+infrasp <-sapply(strsplit(as.character(mydata[,3])," "),function(x) x[3])
 
 infrasp
 
+#install.packages("Taxonstand") 
 library(Taxonstand)
 correctednames <- TPL(genus = genera, species = epithet, infrasp = infrasp, infra = F, corr = TRUE, diffchar = 2, max.distance = 1,version = "1.1", encoding = "UTF-8", author = TRUE,drop.lower.level = FALSE, file = "", silent = TRUE, repeats = 6)
 write.csv(correctednames,"correctednames.csv", row.names = FALSE)
 
 
-species <- paste(genera,epithet, sep = "_")
+species <- paste(correctednames$New.Genus,correctednames$New.Species, sep = "_")
 species
 duplicated(species)
+species[22] <- "Ulex_parviflorus_funkii"
+duplicated(species)
 
-#mydata[,5] <- as.character(mydata[,5])
-#mydata[,5][duplicated(species)]
-#species[duplicated(species)]
-#species[duplicated(species)] <- mydata[,5][duplicated(species)]
+mydata[,1] <- as.character(mydata[,1])
+mydata[,1][mydata[,1]=="Leguminosae"] <-"Fabaceae" 
+mydata[,1][mydata[,1]=="Compositae"] <-"Asteraceae"
+mydata[,1][mydata[,1]=="Palmae"] <-"Arecaceae"
+mydata[,1][mydata[,1]=="Droseraceae"] <-"Drosophyllaceae"
+mydata[,1][mydata[,1]=="Liliaceae"] <-"Asparagaceae"
+mydata[,1][mydata[,1]=="Adoxaceae"] <-"Caprifoliaceae"
+mydata[,1][mydata[,1]=="Adoxaceae"] <-"Caprifoliaceae"
+mydata[,1][mydata[,1]=="Labiatae"] <-"Lamiaceae"
 
-#duplicated(species)
-
-#mydata[,5][duplicated(species, fromLast = TRUE)]
-#species[duplicated(species, fromLast = TRUE)]
-#species[duplicated(species, fromLast = TRUE)] <- mydata[,5][duplicated(species, fromLast = TRUE)]
-
-#duplicated(species)
-
-mydata[,2] <- as.character(mydata[,2])
-mydata[,2][mydata[,2]=="Leguminosae"] <-"Fabaceae" 
-mydata[,2][mydata[,2]=="Compositae"] <-"Asteraceae"
-mydata[,2][mydata[,2]=="Palmae"] <-"Arecaceae"
-mydata[,2][mydata[,2]=="Droseraceae"] <-"Drosophyllaceae"
-mydata[,2][mydata[,2]=="Liliaceae"] <-"Asparagaceae"
-mydata[,2][mydata[,2]=="Adoxaceae"] <-"Caprifoliaceae"
-mydata[,2][mydata[,2]=="Adoxaceae"] <-"Caprifoliaceae"
-mydata[,2][mydata[,2]=="Labiatae"] <-"Lamiaceae"
-
-#Rhamnus is from Rhamnaceae, no EUPHORBIACEAE
-       
+      
 
 
-data <- data.frame(species = species, genus = genera, family = mydata[,2])
+data <- data.frame(species = species, genus = correctednames$New.Genus, family = mydata[,1])
 my.phylo.maker <- phylo.maker(data, tree = GBOTB.extended, nodes = nodes.info.1, output.sp.list = TRUE, output.tree = FALSE, scenarios = c("S1","S2","S3"), r = 1)
 
 
-speciesnamesversions <- cbind(as.character(mydata[,1]), paste(correctednames$New.Genus,correctednames$New.Species, sep = "_"), species )
+speciesnamesversions <- cbind(as.character(mydata[,3]), paste(correctednames$New.Genus,correctednames$New.Species, sep = "_"), species )
+speciesnamesversions
 
-my.phylo.maker$scenario.3$tip.label <- speciesnamesversions[,1][match(my.phylo.maker$scenario.3$tip.label,speciesnamesversions[,3])]
 pdffn = paste0("myphylo", ".scenario3.pdf")
 pdf(file=pdffn, width=6, height=18)
 plot(my.phylo.maker$scenario.3, cex = 0.5)
+add.scale.bar()
 dev.off()
 write.tree(my.phylo.maker$scenario.3, file = "mytree3.tree")
 
-my.phylo.maker$scenario.2$run.1$tip.label <- speciesnamesversions[,1][match(my.phylo.maker$scenario.2$run.1$tip.label,speciesnamesversions[,3])]
 pdffn = paste0("myphylo", ".scenario2.pdf")
 pdf(file=pdffn, width=6, height=18)
 plot(my.phylo.maker$scenario.2$run.1, cex = 0.5)
+add.scale.bar()
 dev.off()
 write.tree(my.phylo.maker$scenario.2$run.1, file = "mytree2.tree")
 
-my.phylo.maker$scenario.1$tip.label <- speciesnamesversions[,1][match(my.phylo.maker$scenario.1$tip.label,speciesnamesversions[,3])]
-pdffn = paste0("myphylo", ".scenario1.pdf")
+dffn = paste0("myphylo", ".scenario1.pdf")
 pdf(file=pdffn, width=6, height=18)
 plot(my.phylo.maker$scenario.1, cex = 0.5)
+add.scale.bar()
 dev.off()
 write.tree(my.phylo.maker$scenario.1, file = "mytree1.tree")
 
 
-#speciesnamesversions2 <- cbind(as.character(mydata[,1]), paste(correctednames$New.Genus,correctednames$New.Species, correctednames$New.Infraspecific, sep = "_"), species )
-#speciesnamesversions2[,2] <- sub("_$", "", speciesnamesversions2[,2])
-#speciesnamesversions2
+
 
 ```
 
@@ -122,54 +105,42 @@ write.tree(my.phylo.maker$scenario.1, file = "mytree1.tree")
 4. Calculate phylogenetic diversity statistics.
 
 ```{r}
+mydata$Especie <- species 
 
-<<<<<<< HEAD
-#color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[34], "Species", leg.cex = 0.6, main = paste0(names(mydata)[34]))
-#color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[12], "Species", leg.cex = 0.6, main = paste0(names(mydata)[12]))
-#color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[9], "Species", leg.cex = 0.6, main = paste0(names(mydata)[9]))
-#color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[10], "Species", leg.cex = 0.6, main = paste0(names(mydata)[10]))
-#color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[20], "Species", leg.cex = 0.6, main = paste0(names(mydata)[20]))
-=======
-color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[34], "Especie_PL", leg.cex = 0.6, main = paste0(names(mydata)[34]))
-color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[12], "Especie_PL", leg.cex = 0.6, main = paste0(names(mydata)[12]))
-color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[9], "Especie_PL", leg.cex = 0.6, main = paste0(names(mydata)[9]))
-color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[10], "Especie_PL", leg.cex = 0.6, main = paste0(names(mydata)[10]))
-color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[20], "Especie_PL", leg.cex = 0.6, main = paste0(names(mydata)[20]))
->>>>>>> b663868006cdd2f6f04288ee378868ee994b3e1c
+color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[5], "Especie", leg.cex = 0.6, main = paste0(names(mydata)[5]))
 
 #ETC. ETC. ETC.
+#Do this with all the plot
 
 mytree <- my.phylo.maker$scenario.2$run.1
 ?pd
 #Explore the function and run the examples
 dim(mydata)
-mydata <- mydata[1:118,5:49]
-rownames(mydata) = mydata[,1]
+mydata <- mydata[1:44,5:18]
+rownames(mydata) = species
 dim(mydata)
-mydata <- mydata[,-2]
-mydata <- mydata[,-2]
 
-mypd <- pd(t(mydata[,-c(1)]), mytree, include.root=TRUE)
+mypd <- pd(t(mydata), mytree, include.root=TRUE)
 mypd
 
 ?mpd
 #Explore the function and run the examples
 
-mympd <- mpd(t(mydata[,-c(1)]), cophenetic(mytree), abundance.weighted=T)
+mympd <- mpd(t(mydata), cophenetic(mytree), abundance.weighted=T)
 mympd
 myresults1 <- cbind(mypd, mympd)
 
 ?mntd
 #Explore the function and run the examples
 
-mymntd <- mntd(t(mydata[,-c(1)]), cophenetic(mytree), abundance.weighted=T)
+mymntd <- mntd(t(mydata), cophenetic(mytree), abundance.weighted=T)
 mymntd
 myresults2 <- cbind(myresults1, mymntd)
 colnames(myresults2) <- c("PD", "SR", "MPD", "MNTD")
 myresults2
 write.table(myresults2, file = "diversity_index_results.txt")
 
-mycomdist <- comdist(t(mydata[,-c(1)]), cophenetic(mytree), abundance.weighted=T)
+mycomdist <- comdist(t(mydata), cophenetic(mytree), abundance.weighted=T)
 library(cluster)
 mycomdist.clusters <- hclust(mycomdist)
 pdffn = paste0("mpd", ".phylogeneticbetadiversity.pdf")
@@ -178,14 +149,14 @@ plot(mycomdist.clusters, main = "Dendrogram based on beta MPD")
 dev.off()
 
 
-mycomdistnt1 <- comdistnt(t(mydata[,-c(1)]), cophenetic(mytree), abundance.weighted=F, exclude.conspecifics = T)
+mycomdistnt1 <- comdistnt(t(mydata), cophenetic(mytree), abundance.weighted=F, exclude.conspecifics = T)
 mycomdistnt1.clusters <- hclust(mycomdistnt1)
 pdffn = paste0("mntd_excluding", ".phylogeneticbetadiversity.pdf")
 pdf(file=pdffn, width=6, height=6)
 plot(mycomdistnt1.clusters, main = "Dendrogram based on beta MNTD excluding conspecifics")
 dev.off()
 
-mycomdistnt2 <- comdistnt(t(mydata[,-c(1)]), cophenetic(mytree), abundance.weighted=F, exclude.conspecifics = F)
+mycomdistnt2 <- comdistnt(t(mydata), cophenetic(mytree), abundance.weighted=F, exclude.conspecifics = F)
 mycomdistnt2.clusters <- hclust(mycomdistnt2)
 pdffn = paste0("mntd_including", ".phylogeneticbetadiversity.pdf")
 pdf(file=pdffn, width=6, height=6)
@@ -197,18 +168,18 @@ dev.off()
 
 5. We are going to check for phylogenetic clustering and overdispersion
 ```{r}
-my.ses.pd <- ses.pd(t(mydata[,-c(1)]), mytree, null.model = "taxa.labels",
+my.ses.pd <- ses.pd(t(mydata), mytree, null.model = "taxa.labels",
 runs = 999)
 my.ses.pd
 write.table(my.ses.pd, file="ses.pd.result.txt")
 
-my.ses.mpd <- ses.mpd(t(mydata[,-c(1)]), cophenetic(mytree), null.model = "taxa.labels",
+my.ses.mpd <- ses.mpd(t(mydata), cophenetic(mytree), null.model = "taxa.labels",
 abundance.weighted = T, runs = 999)
 my.ses.mpd
 write.table(my.ses.mpd, file="ses.mpd.result.txt")
 
 
-my.ses.mntd <- ses.mntd(t(mydata[,-c(1)]), cophenetic(mytree), null.model = "taxa.labels",
+my.ses.mntd <- ses.mntd(t(mydata), cophenetic(mytree), null.model = "taxa.labels",
 abundance.weighted = T, runs = 999)
 my.ses.mntd
 write.table(my.ses.mntd, file="ses.mntd.result.txt")
@@ -217,7 +188,7 @@ write.table(my.ses.mntd, file="ses.mntd.result.txt")
 
 ?comm.phylo.cor
 
-comm.phylo.cor.r <- comm.phylo.cor(t(mydata[,-c(1)]), mytree, metric="cij",null.model="sample.taxa.labels")
+comm.phylo.cor.r <- comm.phylo.cor(t(mydata), mytree, metric="cij",null.model="sample.taxa.labels")
 comm.phylo.cor.r
 par(mai=c(1.02,0.82,0.82,0.42))
 pdffn = paste0("comm.phylo.cor", ".phylogeneticbetadiversity.pdf")

@@ -1,77 +1,45 @@
-"Taxon","Genus","Hybrid.marker","Abbrev","Infraspecific.rank","Infraspecific","Authority","ID","Plant.Name.Index","TPL.version","Taxonomic.status","New.Genus","New.Hybrid.marker","New.Species","New.Infraspecific.rank","New.Infraspecific","New.Authority","New.ID","New.Taxonomic.status","Typo","WFormat","Higher.level","Date","Tax_res"
-"Anagyris foetida","Anagyris","",NA,NA,"","","ild-6969",TRUE,"1.1","Accepted","Anagyris","","foetida","","","L.","ild-6969","Accepted",FALSE,FALSE,FALSE,2021-05-10,"Species"
-"Andryala ragusina","Andryala","",NA,NA,"","","gcc-117388",TRUE,"1.1","Accepted","Andryala","","ragusina","","","L.","gcc-117388","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Anthyllis cytisoides","Anthyllis","",NA,NA,"","","ild-7184",TRUE,"1.1","Accepted","Anthyllis","","cytisoides","","","L.","ild-7184","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Aphyllanthes monspeliensis","Aphyllanthes","",NA,NA,"","","kew-299864",TRUE,"1.1","Accepted","Aphyllanthes","","monspeliensis","","","L.","kew-299864","Accepted",FALSE,FALSE,FALSE,2021-05-10,"Species"
-"Asparagus horridus","Asparagus","",NA,NA,"","","kew-275099",TRUE,"1.1","Accepted","Asparagus","","horridus","","","L.","kew-275099","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Asparagus albus","Asparagus","",NA,NA,"","","kew-274938",TRUE,"1.1","Accepted","Asparagus","","albus","","","L.","kew-274938","Accepted",FALSE,FALSE,FALSE,2021-05-10,"Species"
-"Asperula hirsuta","Asperula","",NA,NA,"","","kew-16890",TRUE,"1.1","Accepted","Asperula","","hirsuta","","","Desf.","kew-16890","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Ballota hirsuta","Ballota","",NA,NA,"","","kew-19602",TRUE,"1.1","Accepted","Ballota","","hirsuta","","","Benth.","kew-19602","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Brachypodium retusum","Brachypodium","",NA,NA,"","","kew-400076",TRUE,"1.1","Accepted","Brachypodium","","retusum","","","(Pers.) P.Beauv.","kew-400076","Accepted",FALSE,FALSE,FALSE,2021-05-10,"Species"
-"Calicotome villosa","Calicotome","",NA,NA,"","","ild-8336",TRUE,"1.1","Accepted","Calicotome","","villosa","","","(Poir.) Link","ild-8336","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Cerastium gibraltaricum","Cerastium","",NA,NA,"","","kew-2710359",TRUE,"1.1","Accepted","Cerastium","","gibraltaricum","","","Boiss.","kew-2710359","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Chamaerops humilis","Chamaerops","",NA,NA,"","","kew-37792",TRUE,"1.1","Accepted","Chamaerops","","humilis","","","L.","kew-37792","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Cistus albidus","Cistus","",NA,NA,"","","kew-2723264",TRUE,"1.1","Accepted","Cistus","","albidus","","","L.","kew-2723264","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Cistus crispus","Cistus","",NA,NA,"","","kew-2723349",TRUE,"1.1","Accepted","Cistus","","crispus","","","L.","kew-2723349","Accepted",FALSE,FALSE,FALSE,2021-05-10,"Species"
-"Cistus laurifolius","Cistus","",NA,NA,"","","kew-2723479",TRUE,"1.1","Accepted","Cistus","","laurifolius","","","L.","kew-2723479","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Cistus monspeliensis","Cistus","",NA,NA,"","","kew-2723524",TRUE,"1.1","Accepted","Cistus","","monspeliensis","","","L.","kew-2723524","Accepted",FALSE,FALSE,FALSE,2021-05-10,"Species"
-"Cistus salviifolius","Cistus","",NA,NA,"","","kew-2723633",TRUE,"1.1","Accepted","Cistus","","salviifolius","","","L.","kew-2723633","Accepted",FALSE,FALSE,FALSE,2021-05-10,"Species"
-"Clematis flammula","Clematis","",NA,NA,"","","kew-2725991",TRUE,"1.1","Accepted","Clematis","","flammula","","","L.","kew-2725991","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Crataegus monogyna","Crataegus","",NA,NA,"","","rjp-49",TRUE,"1.1","Accepted","Crataegus","","monogyna","","","Jacq.","rjp-49","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Cytisus fontanesii","Cytisus","",NA,NA,"","","ild-8354",TRUE,"1.1","Accepted","Cytisus","","fontanesii","","","Ball","ild-8354","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Daphne gnidium","Daphne","",NA,NA,"","","kew-2756985",TRUE,"1.1","Accepted","Daphne","","gnidium","","","L.","kew-2756985","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Echium albicans","Echium","",NA,NA,"","","kew-2783978",TRUE,"1.1","Accepted","Echium","","albicans","","","Lag. & Rodr.","kew-2783978","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Fumana ericifolia","Fumana","",NA,NA,"","","kew-2815180",TRUE,"1.1","Accepted","Fumana","","ericifolia","","","Wallr.","kew-2815180","Accepted",FALSE,FALSE,FALSE,2021-05-10,"Species"
-"Fumana thymifolia","Fumana","",NA,NA,"","","kew-2815222",TRUE,"1.1","Accepted","Fumana","","thymifolia","","","(L.) Spach","kew-2815222","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Genista umbellata","Genista","",NA,NA,"","","ild-8456",TRUE,"1.1","Accepted","Genista","","umbellata","","","(L'Her.) Poir.","ild-8456","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Halimium atriplicifolium","Halimium","",NA,NA,"","","kew-2838213",TRUE,"1.1","Accepted","Halimium","","atriplicifolium","","","(Lam.) Spach","kew-2838213","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Helianthemum asperum","Helianthemum","",NA,NA,"","","kew-2842277",TRUE,"1.1","Accepted","Helianthemum","","asperum","","","Lag. ex Dun.","kew-2842277","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Helianthemum cinereum","Helianthemum","",NA,NA,"","","kew-2842348",TRUE,"1.1","Accepted","Helianthemum","","cinereum","","","(Cav.) Pers.","kew-2842348","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Helianthemum marifolium","Helianthemum","",NA,NA,"","","kew-2842576",TRUE,"1.1","Accepted","Helianthemum","","marifolium","","","(L.) Mill.","kew-2842576","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Helichrysum italicum","Helichrysum","",NA,NA,"","","gcc-34309",TRUE,"1.1","Accepted","Helichrysum","","italicum","","","(Roth) G.Don","gcc-34309","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Helichrysum stoechas","Helichrysum","",NA,NA,"","","gcc-100508",TRUE,"1.1","Accepted","Helichrysum","","stoechas","","","(L.) Moench","gcc-100508","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Juniperus oxycedrus","Juniperus","",NA,NA,"","","kew-2332702",TRUE,"1.1","Accepted","Juniperus","","oxycedrus","","","L.","kew-2332702","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Jurinea pinnata","Jurinea","",NA,NA,"","","gcc-101621",TRUE,"1.1","Accepted","Jurinea","","pinnata","","","(Pers.) DC.","gcc-101621","Accepted",FALSE,FALSE,FALSE,2021-05-10,"Species"
-"Lavandula lanata","Lavandula","",NA,NA,"","","kew-109032",TRUE,"1.1","Accepted","Lavandula","","lanata","","","Boiss.","kew-109032","Accepted",FALSE,FALSE,FALSE,2021-05-10,"Species"
-"Lonicera periclymenum","Lonicera","",NA,NA,"","","kew-2357110",TRUE,"1.1","Accepted","Lonicera","","periclymenum","","","L.","kew-2357110","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Macrochloa tenacissima",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Mercurialis tomentosa","Mercurialis","",NA,NA,"","","kew-125793",TRUE,"1.1","Accepted","Mercurialis","","tomentosa","","","L.","kew-125793","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Micromeria graeca","Micromeria","",NA,NA,"","","kew-127235",TRUE,"1.1","Accepted","Micromeria","","graeca","","","(L.) Benth. ex Rchb.","kew-127235","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Olea europaea","Olea","",NA,NA,"","","kew-355112",TRUE,"1.1","Accepted","Olea","","europaea","","","L.","kew-355112","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Hedysarum boveanum","Hedysarum","",NA,NA,"","","ild-37864",TRUE,"1.1","Accepted","Hedysarum","","boveanum","","","Basiner","ild-37864","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Phagnalon rupestre","Phagnalon","",NA,NA,"","","gcc-8855",TRUE,"1.1","Accepted","Phagnalon","","rupestre","","","(L.) DC.","gcc-8855","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Phagnalon saxatile","Phagnalon","",NA,NA,"","","gcc-27942",TRUE,"1.1","Accepted","Phagnalon","","saxatile","","","(L.) Cass.","gcc-27942","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Phillyrea angustifolia","Phillyrea","",NA,NA,"","","kew-355819",TRUE,"1.1","Accepted","Phillyrea","","angustifolia","","","L.","kew-355819","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Phlomis lychnitis","Phlomis","",NA,NA,"","","kew-152303",TRUE,"1.1","Accepted","Phlomis","","lychnitis","","","L.","kew-152303","Accepted",FALSE,FALSE,FALSE,2021-05-10,"Species"
-"Phlomis purpurea","Phlomis","",NA,NA,"","","kew-152390",TRUE,"1.1","Accepted","Phlomis","","purpurea","","","L.","kew-152390","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Pinus halepensis","Pinus","",NA,NA,"","","kew-2561998",TRUE,"1.1","Accepted","Pinus","","halepensis","","","Mill.","kew-2561998","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Pistacia lentiscus","Pistacia","",NA,NA,"","","kew-2407564",TRUE,"1.1","Accepted","Pistacia","","lentiscus","","","L.","kew-2407564","Accepted",FALSE,FALSE,FALSE,2021-05-10,"Species"
-"Pistacia terebinthus","Pistacia","",NA,NA,"","","kew-2407017",TRUE,"1.1","Accepted","Pistacia","","terebinthus","","","L.","kew-2407017","Accepted",FALSE,FALSE,FALSE,2021-05-10,"Species"
-"Polygala rupestris","Polygala","",NA,NA,"","","kew-2555340",TRUE,"1.1","Accepted","Polygala","","rupestris","","","Pourr.","kew-2555340","Accepted",FALSE,FALSE,FALSE,2021-05-10,"Species"
-"Ptilostemon hispanicus","Ptilostemon","",NA,NA,"","","gcc-92921",TRUE,"1.1","Accepted","Ptilostemon","","hispanicus","","","(Lam.) Greuter","gcc-92921","Accepted",FALSE,FALSE,FALSE,2021-05-10,"Species"
-"Putoria calabrica",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Quercus coccifera","Quercus","",NA,NA,"","","kew-172199",TRUE,"1.1","Accepted","Quercus","","coccifera","","","L.","kew-172199","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Quercus ballota",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Quercus suber","Quercus","",NA,NA,"","","kew-175312",TRUE,"1.1","Accepted","Quercus","","suber","","","L.","kew-175312","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Retama sphaerocarpa","Retama","",NA,NA,"","","ild-8469",TRUE,"1.1","Accepted","Retama","","sphaerocarpa","","","(L.) Boiss.","ild-8469","Accepted",FALSE,FALSE,FALSE,2021-05-10,"Species"
-"Rhamnus alaternus","Rhamnus","",NA,NA,"","","kew-2525844",TRUE,"1.1","Accepted","Rhamnus","","alaternus","","","L.","kew-2525844","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Rhamnus myrtifolia",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Rhamnus lycioides","Rhamnus","",NA,NA,"","","kew-2523132",TRUE,"1.1","Accepted","Rhamnus","","lycioides","","","L.","kew-2523132","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Rosa canina","Rosa","",NA,NA,"","","rjp-39",TRUE,"1.1","Accepted","Rosa","","canina","","","L.","rjp-39","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Salvia rosmarinus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Rubia peregrina","Rubia","",NA,NA,"","","kew-180363",TRUE,"1.1","Accepted","Rubia","","peregrina","","","L.","kew-180363","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Rubus ulmifolius","Rubus","",NA,NA,"","","rjp-12",TRUE,"1.1","Accepted","Rubus","","ulmifolius","","","Schott","rjp-12","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Ruta angustifolia","Ruta","",NA,NA,"","","kew-2527510",TRUE,"1.1","Accepted","Ruta","","angustifolia","","","Pers.","kew-2527510","Accepted",FALSE,FALSE,FALSE,2021-05-10,"Species"
-"Scrophularia canina","Scrophularia","",NA,NA,"","","kew-2585617",TRUE,"1.1","Accepted","Scrophularia","","canina","","","L.","kew-2585617","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Sedum sediforme","Sedum","",NA,NA,"","","kew-2489469",TRUE,"1.1","Accepted","Sedum","","sediforme","","","(Jacq.) Pau","kew-2489469","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Smilax aspera","Smilax","",NA,NA,"","","kew-288512",TRUE,"1.1","Accepted","Smilax","","aspera","","","L.","kew-288512","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Staehelina dubia","Staehelina","",NA,NA,"","","gcc-143036",TRUE,"1.1","Accepted","Staehelina","","dubia","","","L.","gcc-143036","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Teucrium capitatum","Teucrium","",NA,NA,"","","kew-202749",TRUE,"1.1","Accepted","Teucrium","","capitatum","","","L.","kew-202749","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Teucrium fruticans","Teucrium","",NA,NA,"","","kew-202931",TRUE,"1.1","Accepted","Teucrium","","fruticans","","","L.","kew-202931","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Teucrium lusitanicum","Teucrium","",NA,NA,"","","kew-203057",TRUE,"1.1","Accepted","Teucrium","","lusitanicum","","","Schreb.","kew-203057","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Teucrium webbianum","Teucrium","",NA,NA,"","","kew-203494",TRUE,"1.1","Accepted","Teucrium","","webbianum","","","Boiss.","kew-203494","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Thesium humifusum","Thesium","",NA,NA,"","","kew-2513633",TRUE,"1.1","Accepted","Thesium","","humifusum","","","DC.","kew-2513633","Accepted",FALSE,FALSE,FALSE,2021-05-10,"Species"
-"Thymus granatensis","Thymus","",NA,NA,"","","kew-204806",TRUE,"1.1","Accepted","Thymus","","granatensis","","","Boiss.","kew-204806","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Thymus mastichina","Thymus","",NA,NA,"","","kew-205077",TRUE,"1.1","Accepted","Thymus","","mastichina","","","(L.) L.","kew-205077","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
-"Ulex baeticus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Vinca difformis","Vinca","",NA,NA,"","","kew-213148",TRUE,"1.1","Accepted","Vinca","","difformis","","","Pourr.","kew-213148","Accepted",FALSE,FALSE,TRUE,2021-05-10,"Species"
+"Taxon","Genus","Hybrid.marker","Abbrev","Infraspecific.rank","Infraspecific","Authority","ID","Plant.Name.Index","TPL.version","Taxonomic.status","New.Genus","New.Hybrid.marker","New.Species","New.Infraspecific.rank","New.Infraspecific","New.Authority","New.ID","New.Taxonomic.status","Typo","WFormat","Higher.level","Date"
+"Cistus albidus","Cistus","",NA,NA,"","","kew-2723264",TRUE,"1.1","Accepted","Cistus","","albidus","","","L.","kew-2723264","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Thymus mastichina","Thymus","",NA,NA,"","","kew-205077",TRUE,"1.1","Accepted","Thymus","","mastichina","","","(L.) L.","kew-205077","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Ulex parviflorus","Ulex","",NA,NA,"","","ild-8477",TRUE,"1.1","Accepted","Ulex","","parviflorus","","","Pourr.","ild-8477","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Rosmarinus officinalis","Rosmarinus","",NA,NA,"","","kew-179873",TRUE,"1.1","Accepted","Rosmarinus","","officinalis","","","L.","kew-179873","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Staehelina dubia","Staehelina","",NA,NA,"","","gcc-143036",TRUE,"1.1","Accepted","Staehelina","","dubia","","","L.","gcc-143036","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Pinus halepensis","Pinus","",NA,NA,"","","kew-2561998",TRUE,"1.1","Accepted","Pinus","","halepensis","","","Mill.","kew-2561998","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Juniperus oxycedrus","Juniperus","",NA,NA,"","","kew-2332702",TRUE,"1.1","Accepted","Juniperus","","oxycedrus","","","L.","kew-2332702","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Phlomis lychnitis","Phlomis","",NA,NA,"","","kew-152303",TRUE,"1.1","Accepted","Phlomis","","lychnitis","","","L.","kew-152303","Accepted",FALSE,FALSE,FALSE,2022-05-11
+"Phlomis purpurea","Phlomis","",NA,NA,"","","kew-152390",TRUE,"1.1","Accepted","Phlomis","","purpurea","","","L.","kew-152390","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Quercus coccifera","Quercus","",NA,NA,"","","kew-172199",TRUE,"1.1","Accepted","Quercus","","coccifera","","","L.","kew-172199","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Rhamnus lycioides","Rhamnus","",NA,NA,"","","kew-2523132",TRUE,"1.1","Accepted","Rhamnus","","lycioides","","","L.","kew-2523132","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Quercus rotundifolia","Quercus","",NA,NA,"","","kew-174888",TRUE,"1.1","Accepted","Quercus","","rotundifolia","","","Lam.","kew-174888","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Pistacia lentiscus","Pistacia","",NA,NA,"","","kew-2407564",TRUE,"1.1","Accepted","Pistacia","","lentiscus","","","L.","kew-2407564","Accepted",FALSE,FALSE,FALSE,2022-05-11
+"Rubia peregrina","Rubia","",NA,NA,"","","kew-180363",TRUE,"1.1","Accepted","Rubia","","peregrina","","","L.","kew-180363","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Rhamnus alaternus","Rhamnus","",NA,NA,"","","kew-2525844",TRUE,"1.1","Accepted","Rhamnus","","alaternus","","","L.","kew-2525844","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Daphne gnidium","Daphne","",NA,NA,"","","kew-2756985",TRUE,"1.1","Accepted","Daphne","","gnidium","","","L.","kew-2756985","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Genista umbellata","Genista","",NA,NA,"","","ild-8456",TRUE,"1.1","Accepted","Genista","","umbellata","","","(L'Her.) Poir.","ild-8456","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Brachypodium retusum","Brachypodium","",NA,NA,"","","kew-400076",TRUE,"1.1","Accepted","Brachypodium","","retusum","","","(Pers.) P.Beauv.","kew-400076","Accepted",FALSE,FALSE,FALSE,2022-05-11
+"Olea europaea","Olea","",NA,NA,"","","kew-355112",TRUE,"1.1","Accepted","Olea","","europaea","","","L.","kew-355112","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Stipa tenacissima","Stipa","",NA,NA,"","","kew-445814",TRUE,"1.1","Accepted","Stipa","","tenacissima","","","L.","kew-445814","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Pinus pinaster","Pinus","",NA,NA,"","","kew-2562572",TRUE,"1.1","Accepted","Pinus","","pinaster","","","Aiton","kew-2562572","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Ulex baeticus","Ulex","",NA,NA,"","","ild-9582",TRUE,"1.1","Synonym","Ulex","","parviflorus","subsp.","funkii","(Webb) Guinea","ild-8480","Accepted",FALSE,FALSE,FALSE,2022-05-11
+"Abies pinsapo","Abies","",NA,NA,"","","kew-2610038",TRUE,"1.1","Accepted","Abies","","pinsapo","","","Boiss.","kew-2610038","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Juniperus phoenicea","Juniperus","",NA,NA,"","","kew-2332707",TRUE,"1.1","Accepted","Juniperus","","phoenicea","","","L.","kew-2332707","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Putoria calabrica","Putoria","",NA,NA,"","","kew-170996",TRUE,"1.1","Synonym","Plocama","","calabrica","","","(L.f.) M.Backlund & Thulin","kew-347971","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Bupleurum spinosum","Bupleurum","",NA,NA,"","","kew-2687177",TRUE,"1.1","Accepted","Bupleurum","","spinosum","","","Gouan","kew-2687177","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Lavandula lanata","Lavandula","",NA,NA,"","","kew-109032",TRUE,"1.1","Accepted","Lavandula","","lanata","","","Boiss.","kew-109032","Accepted",FALSE,FALSE,FALSE,2022-05-11
+"Lavandula stoechas","Lavandula","",NA,NA,"","","kew-109094",TRUE,"1.1","Accepted","Lavandula","","stoechas","","","L.","kew-109094","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Thapsia villosa","Thapsia","",NA,NA,"","","kew-2435585",TRUE,"1.1","Accepted","Thapsia","","villosa","","","L.","kew-2435585","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Fumana thymifolia","Fumana","",NA,NA,"","","kew-2815222",TRUE,"1.1","Accepted","Fumana","","thymifolia","","","(L.) Spach","kew-2815222","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Helianthemum marifolium","Helianthemum","",NA,NA,"","","kew-2842576",TRUE,"1.1","Accepted","Helianthemum","","marifolium","","","(L.) Mill.","kew-2842576","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Teucrium polium","Teucrium","",NA,NA,"","","kew-203217",TRUE,"1.1","Accepted","Teucrium","","polium","","","L.","kew-203217","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Ononis speciosa","Ononis","",NA,NA,"","","ild-7995",TRUE,"1.1","Accepted","Ononis","","speciosa","","","Lag.","ild-7995","Accepted",FALSE,FALSE,FALSE,2022-05-11
+"Phlomis crinita","Phlomis","",NA,NA,"","","kew-152194",TRUE,"1.1","Accepted","Phlomis","","crinita","","","Cav.","kew-152194","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Rosa canina","Rosa","",NA,NA,"","","rjp-39",TRUE,"1.1","Accepted","Rosa","","canina","","","L.","rjp-39","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Clematis flammula","Clematis","",NA,NA,"","","kew-2725991",TRUE,"1.1","Accepted","Clematis","","flammula","","","L.","kew-2725991","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Quercus faginea","Quercus","",NA,NA,"","","kew-172690",TRUE,"1.1","Accepted","Quercus","","faginea","","","Lam.","kew-172690","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Smilax aspera","Smilax","",NA,NA,"","","kew-288512",TRUE,"1.1","Accepted","Smilax","","aspera","","","L.","kew-288512","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Cytisus fontanesii","Cytisus","",NA,NA,"","","ild-8354",TRUE,"1.1","Accepted","Cytisus","","fontanesii","","","Ball","ild-8354","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Asperula hirsuta","Asperula","",NA,NA,"","","kew-16890",TRUE,"1.1","Accepted","Asperula","","hirsuta","","","Desf.","kew-16890","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Linum suffruticosum","Linum","",NA,NA,"","","kew-2353458",TRUE,"1.1","Accepted","Linum","","suffruticosum","","","L.","kew-2353458","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Lonicera implexa","Lonicera","",NA,NA,"","","kew-2339739",TRUE,"1.1","Accepted","Lonicera","","implexa","","","Aiton","kew-2339739","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Crataegus monogyna","Crataegus","",NA,NA,"","","rjp-49",TRUE,"1.1","Accepted","Crataegus","","monogyna","","","Jacq.","rjp-49","Accepted",FALSE,FALSE,TRUE,2022-05-11
+"Ptilostemon hispanicus","Ptilostemon","",NA,NA,"","","gcc-92921",TRUE,"1.1","Accepted","Ptilostemon","","hispanicus","","","(Lam.) Greuter","gcc-92921","Accepted",FALSE,FALSE,FALSE,2022-05-11
