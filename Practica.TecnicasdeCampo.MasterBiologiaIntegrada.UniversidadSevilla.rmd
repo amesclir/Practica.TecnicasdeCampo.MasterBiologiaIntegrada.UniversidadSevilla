@@ -106,7 +106,7 @@ write.tree(my.phylo.maker$scenario.1, file = "mytree1.tree")
 
 ```{r}
 mydata$Especie <- species 
-
+library(picante)
 color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[5], "Especie", leg.cex = 0.6, main = paste0(names(mydata)[5]))
 
 #ETC. ETC. ETC.
@@ -143,6 +143,7 @@ write.table(myresults2, file = "diversity_index_results.txt")
 mycomdist <- comdist(t(mydata), cophenetic(mytree), abundance.weighted=T)
 library(cluster)
 mycomdist.clusters <- hclust(mycomdist)
+
 pdffn = paste0("mpd", ".phylogeneticbetadiversity.pdf")
 pdf(file=pdffn, width=6, height=6)
 plot(mycomdist.clusters, main = "Dendrogram based on beta MPD")
