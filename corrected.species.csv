@@ -1,42 +1,42 @@
 "","SORTER","Submitted_Name","Submitted_Author","Submitted_Genus","Submitted_Rank","Name_in_database","Author_in_database","Genus_in_database","Rank_in_database","ID_in_database","Name_set","Fuzzy","Score","name.dist","author.dist","New_name","New_author","New_ID","Family","Name_spLev","Accepted_SPNAME","NOTE"
-"28",1,"Pinus halepensis","","Pinus",2,"Pinus halepensis"," Mill.","Pinus",2,407983,1,FALSE,0.8,0,NA,NA,NA,NA,"Pinaceae",NA,"Pinus halepensis",NA
-"35",2,"Quercus rotundifolia","","Quercus",2,"Quercus rotundifolia","Lam.","Quercus",2,206026,1,FALSE,0.8,0,NA,NA,NA,NA,"Fagaceae",NA,"Quercus rotundifolia",NA
-"46",3,"Ulex baeticus","","Ulex",2,"Ulex baeticus"," Boiss.","Ulex",2,172000,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Ulex baeticus",NA
-"37",4,"Rhamnus lycioides ssp. oleoides","","Rhamnus",3,"Rhamnus lycioides ssp. oleoides","(L.) Jahand. & Maire","Rhamnus",3,791400,1,FALSE,0.8,0,NA,"Rhamnus oleoides ssp. oleoides",NA,196048,"Rhamnaceae",NA,"Rhamnus oleoides",NA
+"31",1,"Pinus halepensis","","Pinus",2,"Pinus halepensis"," Mill.","Pinus",2,407983,1,FALSE,0.8,0,NA,NA,NA,NA,"Pinaceae",NA,"Pinus halepensis",NA
+"37",2,"Quercus rotundifolia","","Quercus",2,"Quercus rotundifolia","Lam.","Quercus",2,206026,1,FALSE,0.8,0,NA,NA,NA,NA,"Fagaceae",NA,"Quercus rotundifolia",NA
+"48",3,"Ulex baeticus","","Ulex",2,"Ulex baeticus"," Boiss.","Ulex",2,172000,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Ulex baeticus",NA
+"39",4,"Rhamnus lycioides ssp. oleoides","","Rhamnus",3,"Rhamnus lycioides ssp. oleoides","(L.) Jahand. & Maire","Rhamnus",3,791400,1,FALSE,0.8,0,NA,"Rhamnus oleoides ssp. oleoides",NA,196048,"Rhamnaceae",NA,"Rhamnus oleoides",NA
 "9",5,"Cistus albidus","","Cistus",2,"Cistus albidus","L.","Cistus",2,233419,1,FALSE,0.8,0,NA,NA,NA,NA,"Cistaceae",NA,"Cistus albidus",NA
-"27",6,"Phlomis purpurea","","Phlomis",2,"Phlomis purpurea"," L.","Phlomis",2,329504,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Phlomis purpurea",NA
-"26",7,"Phlomis lychnitis","","Phlomis",2,"Phlomis lychnitis","L.","Phlomis",2,329484,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Phlomis lychnitis",NA
-"48",8,"Juniperus oxycedrus subsp.oxycedrus","","Juniperus",2,"Juniperus oxycedrus"," L.","Juniperus",2,15727,1,TRUE,0,16,NA,NA,NA,NA,"Cupressaceae",NA,"Juniperus oxycedrus",NA
-"42",9,"Staehelina dubia","","Staehelina",2,"Staehelina dubia","L.","Staehelina",2,357857,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Staehelina dubia",NA
-"30",10,"Pistacia lentiscus","","Pistacia",2,"Pistacia lentiscus"," L.","Pistacia",2,225220,1,FALSE,0.8,0,NA,NA,NA,NA,"Anacardiaceae",NA,"Pistacia lentiscus",NA
-"39",11,"Salvia rosmarinus","","Salvia",2,"Salvia rosmarinus","Schleid.","Salvia",2,322315,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Salvia rosmarinus",NA
-"21",12,"Olea europaea var. sylvestris","","Olea",3,"Olea europaea var. sylvestris","(Mill.) Lehr","Olea",3,1007921,1,FALSE,0.8,0,NA,"Olea europaea ssp. oleaster","(Hoffmanns. &  Link) Negodi",309980,"Oleaceae",NA,"Olea europaea",NA
-"36",13,"Rhamnus alaternus","","Rhamnus",2,"Rhamnus alaternus"," L.","Rhamnus",2,195951,1,FALSE,0.8,0,NA,NA,NA,NA,"Rhamnaceae",NA,"Rhamnus alaternus",NA
-"32",14,"Quercus coccifera","","Quercus",2,"Quercus coccifera","L.","Quercus",2,205733,1,FALSE,0.8,0,NA,NA,NA,NA,"Fagaceae",NA,"Quercus coccifera",NA
+"29",6,"Phlomis purpurea","","Phlomis",2,"Phlomis purpurea"," L.","Phlomis",2,329504,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Phlomis purpurea",NA
+"28",7,"Phlomis lychnitis","","Phlomis",2,"Phlomis lychnitis","L.","Phlomis",2,329484,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Phlomis lychnitis",NA
+"49",8,"Juniperus oxycedrus subsp.oxycedrus","","Juniperus",2,"Juniperus oxycedrus"," L.","Juniperus",2,15727,1,TRUE,0,16,NA,NA,NA,NA,"Cupressaceae",NA,"Juniperus oxycedrus",NA
+"44",9,"Staehelina dubia","","Staehelina",2,"Staehelina dubia","L.","Staehelina",2,357857,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Staehelina dubia",NA
+"32",10,"Pistacia lentiscus","","Pistacia",2,"Pistacia lentiscus"," L.","Pistacia",2,225220,1,FALSE,0.8,0,NA,NA,NA,NA,"Anacardiaceae",NA,"Pistacia lentiscus",NA
+"41",11,"Salvia rosmarinus","","Salvia",2,"Salvia rosmarinus","Schleid.","Salvia",2,322315,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Salvia rosmarinus",NA
+"23",12,"Olea europaea var. sylvestris","","Olea",3,"Olea europaea var. sylvestris","(Mill.) Lehr","Olea",3,1007921,1,FALSE,0.8,0,NA,"Olea europaea ssp. oleaster","(Hoffmanns. &  Link) Negodi",309980,"Oleaceae",NA,"Olea europaea",NA
+"38",13,"Rhamnus alaternus","","Rhamnus",2,"Rhamnus alaternus"," L.","Rhamnus",2,195951,1,FALSE,0.8,0,NA,NA,NA,NA,"Rhamnaceae",NA,"Rhamnus alaternus",NA
+"34",14,"Quercus coccifera","","Quercus",2,"Quercus coccifera","L.","Quercus",2,205733,1,FALSE,0.8,0,NA,NA,NA,NA,"Fagaceae",NA,"Quercus coccifera",NA
 "8",15,"Brachypodium retusum","","Brachypodium",2,"Brachypodium retusum","(Pers.) P.Beauv.","Brachypodium",2,107757,1,FALSE,0.8,0,NA,NA,NA,NA,"Poaceae",NA,"Brachypodium retusum",NA
-"45",16,"Thymus mastichina ssp. mastichina","","Thymus",3,"Thymus mastichina ssp. mastichina",NA,"Thymus",3,325757,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Thymus mastichina",NA
-"44",17,"Thymbra capitata","","Thymbra",2,"Thymbra capitata","(L.) Cav.","Thymbra",2,1037093,1,FALSE,0.8,0,NA,"Coridothymus capitatus","(L.) Rchb.fil.",325583,"Lamiaceae",NA,"Coridothymus capitatus",NA
-"14",18,"Genista umbellata","","Genista",2,"Genista umbellata"," (L?Hér.) Poir.","Genista",2,171970,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Genista umbellata",NA
-"20",19,"Macrochloa tenacissima","","Macrochloa",2,"Macrochloa tenacissima"," (L.) Kunth","Macrochloa",2,107015,1,FALSE,0.8,0,NA,NA,NA,NA,"Poaceae",NA,"Macrochloa tenacissima",NA
-"17",20,"Jasminum fruticans","","Jasminum",2,"Jasminum fruticans","L.","Jasminum",2,309628,1,FALSE,0.8,0,NA,NA,NA,NA,"Oleaceae",NA,"Jasminum fruticans",NA
+"47",16,"Thymus mastichina ssp. mastichina","","Thymus",3,"Thymus mastichina ssp. mastichina",NA,"Thymus",3,325757,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Thymus mastichina",NA
+"46",17,"Thymbra capitata","","Thymbra",2,"Thymbra capitata","(L.) Cav.","Thymbra",2,1037093,1,FALSE,0.8,0,NA,"Coridothymus capitatus","(L.) Rchb.fil.",325583,"Lamiaceae",NA,"Coridothymus capitatus",NA
+"13",18,"Genista umbellata","","Genista",2,"Genista umbellata"," (L?Hér.) Poir.","Genista",2,171970,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Genista umbellata",NA
+"22",19,"Macrochloa tenacissima","","Macrochloa",2,"Macrochloa tenacissima"," (L.) Kunth","Macrochloa",2,107015,1,FALSE,0.8,0,NA,NA,NA,NA,"Poaceae",NA,"Macrochloa tenacissima",NA
+"19",20,"Jasminum fruticans","","Jasminum",2,"Jasminum fruticans","L.","Jasminum",2,309628,1,FALSE,0.8,0,NA,NA,NA,NA,"Oleaceae",NA,"Jasminum fruticans",NA
 "12",21,"Fumana thymifolia","","Fumana",2,"Fumana thymifolia"," (L.) Spach ex Webb","Fumana",2,233120,1,FALSE,0.8,0,NA,NA,NA,NA,"Cistaceae",NA,"Fumana thymifolia",NA
-"47",22,"Helianthemum mariflorum","","Helianthemum",2,"Helianthemum triflorum","Blanco","Helianthemum",2,859859,1,TRUE,0.7,2,NA,"Microcos triflora","(Blanco) R.C.K.Chung",234683,"Malvaceae",NA,"Microcos triflora",NA
-"25",23,"Phagnalon rupestre","","Phagnalon",2,"Phagnalon rupestre"," (L.) DC.","Phagnalon",2,388524,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Phagnalon rupestre",NA
+"16",22,"Helianthemum marifolium","","Helianthemum",2,"Helianthemum marifolium"," (L.) Mill.","Helianthemum",2,233268,1,FALSE,0.8,0,NA,NA,NA,NA,"Cistaceae",NA,"Helianthemum marifolium",NA
+"27",23,"Phagnalon rupestre","","Phagnalon",2,"Phagnalon rupestre"," (L.) DC.","Phagnalon",2,388524,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Phagnalon rupestre",NA
 "4",24,"Asparagus acutifolius","","Asparagus",2,"Asparagus acutifolius","L.","Asparagus",2,79919,1,FALSE,0.8,0,NA,NA,NA,NA,"Asparagaceae",NA,"Asparagus acutifolius",NA
-"43",25,"Teucrium lusitanicum","","Teucrium",2,"Teucrium lusitanicum"," Schreb.","Teucrium",2,326571,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Teucrium lusitanicum",NA
+"45",25,"Teucrium lusitanicum","","Teucrium",2,"Teucrium lusitanicum"," Schreb.","Teucrium",2,326571,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Teucrium lusitanicum",NA
 "2",26,"Anthyllis cytisoides","","Anthyllis",2,"Anthyllis cytisoides","L.","Anthyllis",2,180297,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Anthyllis cytisoides",NA
 "11",27,"Daphne gnidium","","Daphne",2,"Daphne gnidium"," L.","Daphne",2,232278,1,FALSE,0.8,0,NA,NA,NA,NA,"Thymelaeaceae",NA,"Daphne gnidium",NA
-"19",28,"Lavandula stoechas","","Lavandula",2,"Lavandula stoechas"," L.","Lavandula",2,324003,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Lavandula stoechas",NA
-"18",29,"Lavandula lanata","","Lavandula",2,"Lavandula lanata","Boiss.","Lavandula",2,323976,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Lavandula lanata",NA
+"21",28,"Lavandula stoechas","","Lavandula",2,"Lavandula stoechas"," L.","Lavandula",2,324003,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Lavandula stoechas",NA
+"20",29,"Lavandula lanata","","Lavandula",2,"Lavandula lanata","Boiss.","Lavandula",2,323976,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Lavandula lanata",NA
 "7",30,"Asperula hirsuta","","Asperula",2,"Asperula hirsuta","Desf.","Asperula",2,290439,1,FALSE,0.8,0,NA,NA,NA,NA,"Rubiaceae",NA,"Asperula hirsuta",NA
 "10",31,"Cistus monspeliensis","","Cistus",2,"Cistus monspeliensis"," L.","Cistus",2,233446,1,FALSE,0.8,0,NA,NA,NA,NA,"Cistaceae",NA,"Cistus monspeliensis",NA
-"23",32,"Onobrychis humilis","","Onobrychis",2,"Onobrychis humilis"," (Loefl.) G.López","Onobrychis",2,185637,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Onobrychis humilis",NA
+"24",32,"Onobrychis humilis","","Onobrychis",2,"Onobrychis humilis"," (Loefl.) G.López","Onobrychis",2,185637,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Onobrychis humilis",NA
 "3",33,"Argyrolobium zanonii","","Argyrolobium",2,"Argyrolobium zanonii"," (Turra) P.W.Ball","Argyrolobium",2,170780,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Argyrolobium zanonii",NA
 "5",34,"Asparagus horridus","","Asparagus",2,"Asparagus horridus","L.","Asparagus",2,80016,1,FALSE,0.8,0,NA,NA,NA,NA,"Asparagaceae",NA,"Asparagus horridus",NA
-"38",35,"Rubus ulmifolius","","Rubus",2,"Rubus ulmifolius","Schott","Rubus",2,190793,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Rubus ulmifolius",NA
-"31",36,"Ptilostemon hispanicus","","Ptilostemon",2,"Ptilostemon hispanicus","(Lam.) Greuter","Ptilostemon",2,359605,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Ptilostemon hispanicus",NA
-"41",37,"Sedum sediforme","","Sedum",2,"Sedum sediforme","(Schweinf.) Raym.-Hamet","Sedum",2,677604,1,FALSE,0.8,0,NA,"Sedum crassularia","Raym.-Hamet",132088,"Crassulaceae",NA,"Sedum crassularia","Multiple results"
+"40",35,"Rubus ulmifolius","","Rubus",2,"Rubus ulmifolius","Schott","Rubus",2,190793,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Rubus ulmifolius",NA
+"33",36,"Ptilostemon hispanicus","","Ptilostemon",2,"Ptilostemon hispanicus","(Lam.) Greuter","Ptilostemon",2,359605,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Ptilostemon hispanicus",NA
+"43",37,"Sedum sediforme","","Sedum",2,"Sedum sediforme","(Schweinf.) Raym.-Hamet","Sedum",2,677604,1,FALSE,0.8,0,NA,"Sedum crassularia","Raym.-Hamet",132088,"Crassulaceae",NA,"Sedum crassularia","Multiple results"
 "1",38,"Vinca","","Vinca",1,"Vinca",NA,"Vinca",1,NA,1,FALSE,0.8,0,NA,NA,NA,NA,"Apocynaceae",NA,"Vinca","Matching only genus level"
-"24",39,"Osyris alba","","Osyris",2,"Osyris alba","L.","Osyris",2,248460,1,FALSE,0.8,0,NA,NA,NA,NA,"Santalaceae",NA,"Osyris alba",NA
-"33",40,"Quercus faginea","","Quercus",2,"Quercus faginea"," Lam.","Quercus",2,205792,1,FALSE,0.8,0,NA,NA,NA,NA,"Fagaceae",NA,"Quercus faginea",NA
-"16",41,"Helichrysum stoechas","","Helichrysum",2,"Helichrysum stoechas","(L.) Moench","Helichrysum",2,389401,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Helichrysum stoechas",NA
+"26",39,"Osyris alba","","Osyris",2,"Osyris alba","L.","Osyris",2,248460,1,FALSE,0.8,0,NA,NA,NA,NA,"Santalaceae",NA,"Osyris alba",NA
+"35",40,"Quercus faginea","","Quercus",2,"Quercus faginea"," Lam.","Quercus",2,205792,1,FALSE,0.8,0,NA,NA,NA,NA,"Fagaceae",NA,"Quercus faginea",NA
+"18",41,"Helichrysum stoechas","","Helichrysum",2,"Helichrysum stoechas","(L.) Moench","Helichrysum",2,389401,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Helichrysum stoechas",NA
