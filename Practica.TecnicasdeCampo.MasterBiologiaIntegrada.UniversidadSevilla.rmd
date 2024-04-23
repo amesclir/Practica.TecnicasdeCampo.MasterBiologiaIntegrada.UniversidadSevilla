@@ -25,6 +25,8 @@ library(U.Taxonstand)
 ```{r, echo = F}
 mydata <- read.csv("./transectos.csv") 
 dim(mydata)
+mydata
+
 ```
 
 
@@ -48,7 +50,7 @@ database <- rbind(dat1, dat2, dat3)
 
 rm(dat1, dat2, dat3)
 
-corrected.species <- nameMatch(mydata$Species..names.WFO.2,spSource=database, author = FALSE, max.distance= 1, matchFirst=TRUE)
+corrected.species <- nameMatch(mydata$ESPECIES,spSource=database, author = FALSE, max.distance= 1, matchFirst=TRUE)
 
 corrected.species
 #make corrections to your database if necessary
@@ -71,9 +73,9 @@ plot(mytree$scenario.2, cex = 0.5)
 
 pdffn = paste0("myphylo", ".scenario2.pdf")
 pdf(file=pdffn, width=6, height=60)
-plot(my.phylo.maker$scenario.2$run.1, cex = 0.5)
+plot(mytree$scenario.2, cex = 0.5)
 dev.off()
-write.tree(my.phylo.maker$scenario.2, file = "mytree2.tree")
+write.tree(mytree$scenario.2, file = "mytree2.tree")
 
 
 
@@ -83,25 +85,33 @@ write.tree(my.phylo.maker$scenario.2, file = "mytree2.tree")
 4. Calculate phylogenetic diversity statistics.
 
 ```{r}
-mydata$Especie <- species 
+mydata$ESPECIES <- corrected.species$Accepted_SPNAME
+
+mydata$ESPECIES<- gsub(" ", "_", mydata$ESPECIES)
+
 library(picante)
+
+setdiff(mytree$scenario.2$tip.label,mydata$ESPECIES)
 
 pdffn = paste0("plotting", ".community1.pdf")
 pdf(file=pdffn, width=6, height=6)
-color.plot.phylo(my.phylo.maker$scenario.2$run.1, mydata, names(mydata)[5], "Especie", leg.cex = 0.6, main = paste0(names(mydata)[5]))
+color.plot.phylo(mytree$scenario.2, mydata, names(mydata)[2], "ESPECIES", leg.cex = 0.6, main = paste0(names(mydata)[2]))
 dev.off()
 
 #ETC. ETC. ETC.
 #Do this with all the plot
 
-mytree <- my.phylo.maker$scenario.2$run.1
+mytree <- mytree$scenario.2
 ?pd
 #Explore the function and run the examples
 dim(mydata)
-mydata <- mydata[1:44,5:18]
-rownames(mydata) = species
+names(mydata)
+mydata <- mydata[1:41,2:25]
+rownames(mydata) <- corrected.species$Accepted_SPNAME
+rownames(mydata)<- gsub(" ", "_", rownames(mydata))
 dim(mydata)
 
+mytree$node.label <- NULL
 mypd <- pd(t(mydata), mytree, include.root=TRUE)
 mypd
 
