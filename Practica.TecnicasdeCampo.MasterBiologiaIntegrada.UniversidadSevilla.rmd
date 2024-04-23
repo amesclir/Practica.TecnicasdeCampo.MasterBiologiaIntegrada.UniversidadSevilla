@@ -196,22 +196,21 @@ dev.off()
 6. We are going to calculate the phylogenetic signal
 ```{r}
 
-mydata <- read.delim("Transectos.txt", header = T,  check.names = F)
+mydata <- read.csv("transectos.csv", header = T,  check.names = F)
 mydata
-mydata <- mydata[1:44,1:18]
+mydata$ESPECIES <- corrected.species$Accepted_SPNAME
+mydata$ESPECIES<- gsub(" ", "_", mydata$ESPECIES)
 mydata
-mydata$Especie <- species 
 
 #install.packages("caper")
 library(caper)
 ?phylo.d
 
 mytree$node.label <- NULL
-mydata$Endemismo[mydata$Endemismo == "end\xe9mica"] <- 1
-mydata$Endemismo[mydata$Endemismo == "end\xe9mica_restringida"] <- 1
-mydata$Endemismo[mydata$Endemismo == "no_end\xe9mica"] <- 0
+mydata$Endemismo[mydata$ENDÉMICA == "Sí"] <- 1
+mydata$Endemismo[mydata$ENDÉMICA == "No"] <- 0
 
-myphylo.d <- phylo.d(mydata, mytree, Especie, Endemismo, permut = 1000, rnd.bias=NULL)
+myphylo.d <- phylo.d(mydata, mytree, ESPECIES, ENDÉMICA, permut = 1000, rnd.bias=NULL)
 myphylo.d
 
 pdffn = paste0("phylogenetic_signal", ".endmicity.pdf")
@@ -220,35 +219,3 @@ plot(myphylo.d)
 dev.off()
 
 ```
-
-
-7. We are going to make some calculations of phylogenetic distinctivenes
-
-```{r}
-
-mydata <- read.delim("Transectos.txt", header = T,  check.names = F)
-mydata
-mydata <- mydata[1:44,1:18]
-mydata
-mydata$Especie <- species 
-
-library(picante)
-
-?evol.distinct
-my.evol.distinct <- evol.distinct(mytree, type = "fair.proportion", scale = FALSE, use.branch.lengths = TRUE)
-
-my.evol.distinct
-mean(my.evol.distinct[,2])
-#This is the total evolutionary distinctiveness
-
-mydata[,3][mydata[,5] != 0]
-speciestoprune <- setdiff(mytree$tip.label,mydata[,3][mydata[,5] != 0])
-speciestoprune
-mytree.Bosque1 <- drop.tip(mytree, speciestoprune)
-Bosque1.evol.distinct <- evol.distinct(mytree.Bosque1, type = "fair.proportion", scale = FALSE, use.branch.lengths = TRUE)
-mean(Bosque1.evol.distinct[,2])
-#As example, this is the evolutionary distinctivenes of the community 1
-#You can also calculate this for the rest of the communities
-
-```
-
