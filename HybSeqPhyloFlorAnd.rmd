@@ -1,0 +1,236 @@
+---
+title: "HybSeqPhyloFlorAnd"
+author: "Carmen&Marcial"
+date: "07/4/2023"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+1. Install and load packages
+
+```{r}
+#install.packages("picante")
+#install.packages("geiger")
+#This will install also package dependences
+library(picante)
+#This will also load package dependences
+#library(ape)
+#library(vegan)
+#library(permute)
+#library(lattice)
+#library(nlme)
+library(geiger)
+library(caper)
+
+
+```
+
+
+1. Phylogenetic signal analyses
+
+```{r}
+dat <- read.csv("phylogeneticsignal.csv", header = T,  check.names = F)
+dat
+
+phy <- read.tree("iqtree_datedtreepl_Final_names.tre")
+phy 
+phy <- drop.tip(phy, "Trimenia_moorei")
+phy
+
+dat_end <- dat[,2]
+names(dat_end) <- dat[,1]
+Endemism <- fitDiscrete(phy, dat_end, transform = "lambda")
+Endemism
+
+dat_con <- dat[,3]
+names(dat_con) <- dat[,1]
+Conservation <- fitDiscrete(phy, dat_con, transform = "lambda")
+Conservation
+
+dat_hab <- dat[,4]
+names(dat_hab) <- dat[,1]
+Habit <- fitDiscrete(phy, dat_hab, transform = "lambda")
+Habit
+
+dat_pol <- dat[,5]
+names(dat_pol) <- dat[,1]
+Polinization <- fitDiscrete(phy, dat_pol, transform = "lambda")
+Polinization
+
+dat_dis <- dat[,6]
+names(dat_dis) <- dat[,1]
+Dispersal <- fitDiscrete(phy, dat_dis, transform = "lambda")
+Dispersal
+
+dat_dist <- dat[,7]
+names(dat_dist) <- dat[,1]
+dat_dist[dat_dist == "1"] <- "YES"
+dat_dist[dat_dist == "0"] <- "NO"
+Distribution <- fitDiscrete(phy, dat_dist, transform = "lambda")
+Distribution
+
+```
+
+
+3. Calculate phylogenetic diversity statistics.
+
+```{r}
+
+dat2_end <- read.csv("endemism.csv", header = T,  check.names = F)
+dat2_end
+
+setdiff(phy$tip.label,dat2_end[,1])
+setdiff(dat2_end[,1], phy$tip.label)
+
+row.names(dat2_end) <- dat2_end[,1]
+
+mypd <- pd(t(dat2_end[,2:3]), phy, include.root=TRUE)
+mypd
+
+?mpd
+#Explore the function and run the examples
+
+mympd <- mpd(t(dat2_end[,2:3]), cophenetic(phy), abundance.weighted=F)
+mympd
+myresults1 <- cbind(mypd, mympd)
+
+?mntd
+#Explore the function and run the examples
+
+mymntd <- mntd(t(dat2_end[,2:3]), cophenetic(phy), abundance.weighted=T)
+mymntd
+myresults2 <- cbind(myresults1, mymntd)
+colnames(myresults2) <- c("PD", "SR", "MPD", "MNTD")
+myresults2
+write.table(myresults2, file = "diversity_index_results_endemism.txt")
+
+
+
+dat2_con <- read.csv("conservation.csv", header = T,  check.names = F)
+dat2_con
+
+setdiff(phy$tip.label,dat2_con[,1])
+setdiff(dat2_con[,1], phy$tip.label)
+
+row.names(dat2_con) <- dat2_con[,1]
+
+mypd <- pd(t(dat2_con[,2:7]), phy, include.root=TRUE)
+mypd
+
+mympd <- mpd(t(dat2_con[,2:7]), cophenetic(phy), abundance.weighted=F)
+mympd
+myresults1 <- cbind(mypd, mympd)
+
+mymntd <- mntd(t(dat2_con[,2:7]), cophenetic(phy), abundance.weighted=T)
+mymntd
+myresults2 <- cbind(myresults1, mymntd)
+colnames(myresults2) <- c("PD", "SR", "MPD", "MNTD")
+myresults2
+write.table(myresults2, file = "diversity_index_results_conservation.txt")
+
+```
+
+
+3. We are going to check for phylogenetic clustering and overdispersion
+```{r}
+my.ses.pd <- ses.pd(t(dat2_end[2:3]), phy, null.model = "taxa.labels",
+runs = 999)
+my.ses.pd
+write.table(my.ses.pd, file="ses.pd.result.endemism.txt")
+
+my.ses.mpd <- ses.mpd(t(dat2_end[2:3]), cophenetic(phy), null.model = "taxa.labels",
+abundance.weighted = T, runs = 999)
+my.ses.mpd
+write.table(my.ses.mpd, file="ses.mpd.result.endemism.txt")
+
+
+my.ses.mntd <- ses.mntd(t(dat2_end[2:3]), cophenetic(phy), null.model = "taxa.labels",
+abundance.weighted = T, runs = 999)
+my.ses.mntd
+write.table(my.ses.mntd, file="ses.mntd.result.endemism.txt")
+
+
+
+?comm.phylo.cor
+
+comm.phylo.cor.r <- comm.phylo.cor(t(dat2_end[2:3]), phy, metric="cij",null.model="sample.taxa.labels")
+comm.phylo.cor.r
+par(mai=c(1.02,0.82,0.82,0.42))
+pdffn = paste0("comm.phylo.cor", ".phylogeneticbetadiversity.endemism.pdf")
+pdf(file=pdffn, width=6, height=6)
+hist(comm.phylo.cor.r$random.corrs)
+abline(v=comm.phylo.cor.r$obs.corr)
+dev.off()
+
+```
+
+
+
+4. We are going to calculate the phylogenetic signal with D statistic
+```{r}
+
+
+myphylo.d.end <- phylo.d(dat, phy, Taxon, Endemism, permut = 1000, rnd.bias=NULL)
+myphylo.d.end
+
+pdffn = paste0("phylogenetic_signal", ".endmicity.pdf")
+pdf(file=pdffn, width=6, height=6)
+plot(myphylo.d.end)
+dev.off()
+
+myphylo.d.pol <- phylo.d(dat, phy, Taxon, Polinization, permut = 1000, rnd.bias=NULL)
+myphylo.d.pol
+
+pdffn = paste0("phylogenetic_signal", ".pol.pdf")
+pdf(file=pdffn, width=6, height=6)
+plot(myphylo.d.pol)
+dev.off()
+
+
+myphylo.d.disp <- phylo.d(dat, phy, Taxon, Dispersal, permut = 1000, rnd.bias=NULL)
+myphylo.d.disp
+
+pdffn = paste0("phylogenetic_signal", ".disp.pdf")
+pdf(file=pdffn, width=6, height=6)
+plot(myphylo.d.disp)
+dev.off()
+
+myphylo.d.dist <- phylo.d(dat, phy, Taxon, Distribution, permut = 1000, rnd.bias=NULL)
+myphylo.d.dist
+
+pdffn = paste0("phylogenetic_signal", ".dist.pdf")
+pdf(file=pdffn, width=6, height=6)
+plot(myphylo.d.dist)
+dev.off()
+
+```
+
+
+7. Phylogenetic plotting
+#it does not updated
+
+```{r}
+
+cols<-setNames(c("orange", "yellow", "blue", "cyan", "pink", "green"),levels(as.factor(dat_hab)))
+cols1<-setNames(c("orange","blue"),levels(as.factor(dat_end)))
+#node1 <- getMRCA(tree, c("Acritopappus_sp","Richterago_arenaria"))
+#node2 <- getMRCA(tree, c("Orchis_anthropophora","Gomesa_hydrophila"))
+
+pdffn = paste0("HybSeqPhyloFlorAnd.pdf")
+pdf(file=pdffn, width=30, height=30)
+par(mar = c(0.1, 0.1, 0.1, 0.1))
+plot(phy,type="fan", show.tip.label = T,  label.offset = 10, cex = 1,  tip.color="black", edge.color = "grey", edge.width = 5, no.margin = F)
+tiplabels(pie=to.matrix(dat_hab[phy$tip.label],
+    levels(as.factor(dat_hab))),piecol=cols, bg=cols,cex=0.2, offset = 2.5)
+add.simmap.legend(colors=cols,prompt=FALSE,x=0.9*par()$usr[1],
+    y=0.8*par()$usr[3],fsize=2)
+tiplabels(pie=to.matrix(dat_end[phy$tip.label],
+    levels(as.factor(dat_end))),piecol=cols1, bg=cols1,cex=0.2, offset = 5)
+add.simmap.legend(colors=cols1,prompt=FALSE,x=0.8*par()$usr[1],
+    y=0.8*par()$usr[3],fsize=2)
+#arc.cladelabels(tree, "Asteraceae", node1, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
+#arc.cladelabels(tree, "Orchidaceae", node2, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
+dev.off()
+
+```
+
